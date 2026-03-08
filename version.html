@@ -116,12 +116,18 @@ const age = currentYear - birthyear;
 
 const major = Math.floor(age / 10);
 const minor = age % 10;
-  
+
 const version = major + "." + minor;
 
 const result = document.getElementById("result");
 
 const imagePath = "images/version" + birthyear + ".png";
+
+/* check if image exists */
+
+const img = new Image();
+
+img.onload = function(){
 
 result.innerHTML = `
 <h3>You are Version ${version}</h3>
@@ -137,12 +143,12 @@ result.innerHTML = `
 <p>Share your version</p>
 
 <a class="sharebtn" target="_blank"
-href="https://twitter.com/intent/tweet?text=I'm%20Version%20${age}.0%20Stable%20Build&url=https://144mboriginals.com/version.html">
+href="https://twitter.com/intent/tweet?text=I'm%20Version%20${version}%20Stable%20Build&url=https://144mboriginals.com/version.html">
 Share on X
 </a>
 
 <a class="sharebtn" target="_blank"
-href="https://www.reddit.com/submit?url=https://144mboriginals.com/version.html&title=I'm%20Version%20${age}.0%20Stable%20Build">
+href="https://www.reddit.com/submit?url=https://144mboriginals.com/version.html&title=I'm%20Version%20${version}%20Stable%20Build">
 Share on Reddit
 </a>
 
@@ -156,6 +162,29 @@ Copy Link
 
 <a href="birthday.html" class="button">View Your Shirt</a>
 `;
+
+};
+
+img.onerror = function(){
+
+result.innerHTML = `
+<h3>You are Version ${version}</h3>
+
+<p>Born in ${birthyear}</p>
+
+<p style="margin-top:20px;font-size:18px;">
+Your version shirt is compiling.<br>
+Release coming soon.
+</p>
+
+<br>
+
+<a href="birthday.html" class="button">Browse Available Versions</a>
+`;
+
+};
+
+img.src = imagePath;
 
 }
 
@@ -177,7 +206,7 @@ calculateVersion();
 
 function copyLink(){
 
-navigator.clipboard.writeText("https://144mboriginals.com/version.html");
+navigator.clipboard.writeText(window.location.href);
 
 alert("Link copied. Share it!");
 
