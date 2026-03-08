@@ -70,6 +70,8 @@ Check Version
 
 function calculateVersion(){
 
+document.getElementById("result").innerHTML = "";
+
 const year = document.getElementById("birthyear").value;
 const currentYear = new Date().getFullYear();
 
