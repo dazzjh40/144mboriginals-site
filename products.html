@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Shop | 1.44MB Originals</title>
+
+<meta name="description" content="Shop 1.44MB Originals retro tech shirts. Programmer humour, floppy disk nostalgia and version birthday shirts.">
+
+<meta property="og:title" content="1.44MB Originals">
+<meta property="og:description" content="Retro tech humour shirts and birthday version designs">
+<meta property="og:image" content="logo.png">
 
 <style>
 
@@ -31,16 +39,42 @@ h1{
 margin-bottom:40px;
 }
 
+.nav{
+margin-bottom:30px;
+}
+
+.nav a{
+color:#00ff9c;
+margin:0 12px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.nav a:hover{
+text-decoration:underline;
+}
+
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
 }
 
+.card-link{
+text-decoration:none;
+color:inherit;
+}
+
 .card{
 background:#1a1a1a;
 padding:20px;
 border-radius:8px;
+transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.4);
 }
 
 .card img{
@@ -59,7 +93,6 @@ margin-top:10px;
 padding:12px 18px;
 background:#00ff9c;
 color:black;
-text-decoration:none;
 font-weight:bold;
 border-radius:6px;
 }
@@ -68,19 +101,16 @@ border-radius:6px;
 background:#00d884;
 }
 
-.nav{
-margin-bottom:30px;
-}
-
-.nav a{
-color:#00ff9c;
-margin:0 10px;
-text-decoration:none;
+.footer{
+margin-top:60px;
+font-size:14px;
+opacity:0.6;
 }
 
 </style>
 
 </head>
+
 
 <body>
 
@@ -90,47 +120,58 @@ text-decoration:none;
 
 <div class="nav">
 <a href="index.html">Home</a>
+<a href="products.html">Shop</a>
+<a href="https://handyenough.etsy.com" target="_blank" rel="noopener">Etsy Store</a>
 </div>
 
 <h1>Featured Designs</h1>
 
 <div class="grid">
 
+
+<a href="https://www.etsy.com/listing/4468286122" target="_blank" rel="noopener" class="card-link">
 <div class="card">
 <img src="images/version40.png">
 <div class="title">Version 4.0 Birthday Shirt</div>
-<a class="button" href="https://www.etsy.com/uk/listing/4468286122/40th-birthday-shirt-version-40-stable">View on Etsy</a>
+<div class="button">View on Etsy</div>
 </div>
+</a>
 
+
+<a href="https://www.etsy.com/listing/4447061866" target="_blank" rel="noopener" class="card-link">
 <div class="card">
 <img src="images/systemproperties.png">
 <div class="title">SYSTEM PROPERTIES Shirt</div>
-<a class="button" href="https://www.etsy.com/uk/listing/4447061866/van-life-system-properties-t-shirt-144mb">View on Etsy</a>
+<div class="button">View on Etsy</div>
 </div>
+</a>
 
+
+<a href="https://www.etsy.com/listing/4467172008" target="_blank" rel="noopener" class="card-link">
 <div class="card">
 <img src="images/syserror.png">
 <div class="title">System Error Programmer Shirt</div>
-<a class="button" href="https://www.etsy.com/uk/listing/4467172008/funny-programmer-t-shirt-system-error">View on Etsy</a>
+<div class="button">View on Etsy</div>
 </div>
+</a>
 
+
+<a href="https://www.etsy.com/listing/4441034173" target="_blank" rel="noopener" class="card-link">
 <div class="card">
 <img src="images/floppy144.png">
 <div class="title">Floppy Disk Retro Tech Shirt</div>
-<a class="button" href="https://www.etsy.com/uk/listing/4441034173/90s-retro-tech-gift-t-shirt-for-it">View on Etsy</a>
+<div class="button">View on Etsy</div>
+</div>
+</a>
+
+
 </div>
 
+<div class="footer">
+© 2026 1.44MB Originals
 </div>
 
 </div>
 
 </body>
-
 </html>
-
-
-
-
-
-
-
