@@ -105,54 +105,31 @@ Use the calculator above to discover your version.
 
 <script>
 
-function calculateVersion(){
+function calculateVersion() {
 
-document.getElementById("result").innerHTML = "";
+const birthyear = document.getElementById("birthyear").value;
 
-const year = document.getElementById("birthyear").value;
+if(!birthyear) return;
+
 const currentYear = new Date().getFullYear();
+const age = currentYear - birthyear;
 
-if(!year || year < 1900 || year > currentYear){
-document.getElementById("result").innerHTML = "Please enter a valid birth year.";
-return;
-}
+const result = document.getElementById("result");
 
-const age = currentYear - parseInt(year);
+const imagePath = "images/version" + birthyear + ".png";
 
-let version = age / 10;
-version = Math.floor(version * 2) / 2;
-version = version.toFixed(1);
+result.innerHTML = `
+<h3>You are Version ${age}.0</h3>
 
-const versions = {
+<p>Born in ${birthyear}</p>
 
-"4.0": {
-year:"1984",
-link:"https://www.etsy.com/listing/4468286122",
-image:"images/version40.png"
-},
+<img src="${imagePath}" alt="Version ${age} Birthday Shirt">
 
-"3.5": {
-year:"1989",
-link:"https://www.etsy.com/listing/4467172008",
-image:"images/version35.png"
-},
+<br><br>
 
-"3.0": {
-year:"1994",
-link:"#",
-image:"images/version30.png"
-},
+<a href="birthday.html" class="button">View Your Shirt</a>
+`;
 
-"2.9": {
-year:"1995",
-link:"#",
-image:"images/version29.png"
-},
-
-"2.8": {
-year:"1996",
-link:"#",
-image:"images/version28.png"
 }
 
 };
