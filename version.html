@@ -119,11 +119,35 @@ if(versions[version]){
 
 const item = versions[version];
 
+let shareText = encodeURIComponent(`I'm running Version ${version} Stable Build. Find yours.`);
+let shareUrl = encodeURIComponent("https://144mboriginals.com/version.html");
+
 let output = `
 <div>You are running</div>
 <h2>Version ${version}</h2>
 <div>Stable build released ${item.year}</div>
+
 <img src="${item.image}" style="width:220px;margin-top:20px;border-radius:6px;">
+
+<div class="sharebox">
+
+<p>Share your version</p>
+
+<a class="sharebtn" target="_blank"
+href="https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}">
+Share on X
+</a>
+
+<a class="sharebtn" target="_blank"
+href="https://www.reddit.com/submit?url=${shareUrl}&title=${shareText}">
+Share on Reddit
+</a>
+
+<button class="sharebtn" onclick="copyLink()">
+Copy Link
+</button>
+
+</div>
 `;
 
 if(item.link !== "#"){
