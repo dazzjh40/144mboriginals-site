@@ -11,14 +11,14 @@
 
 body{
 margin:0;
-font-family: Arial, Helvetica, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 background:#111;
-color:#ffffff;
+color:#fff;
 text-align:center;
 }
 
 .container{
-max-width:900px;
+max-width:1000px;
 margin:auto;
 padding:40px 20px;
 }
@@ -34,8 +34,8 @@ margin-bottom:10px;
 }
 
 .tagline{
-color:#cccccc;
-margin-bottom:40px;
+color:#ccc;
+margin-bottom:30px;
 font-size:18px;
 }
 
@@ -45,7 +45,7 @@ background:#00ff9c;
 color:#000;
 text-decoration:none;
 padding:16px;
-margin:15px auto;
+margin:12px auto;
 max-width:300px;
 font-weight:bold;
 border-radius:6px;
@@ -56,24 +56,52 @@ transition:0.2s;
 background:#00d884;
 }
 
-.social{
-margin-top:40px;
+.section{
+margin-top:60px;
 }
 
-.social a{
-color:#00ff9c;
-margin:0 10px;
-text-decoration:none;
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:30px;
+}
+
+.product{
+background:#1a1a1a;
+padding:20px;
+border-radius:8px;
+}
+
+.product img{
+width:100%;
+border-radius:6px;
+}
+
+.product-title{
+margin-top:12px;
 font-weight:bold;
 }
 
+.small-button{
+display:inline-block;
+margin-top:10px;
+padding:10px 16px;
+background:#00ff9c;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:5px;
+}
+
 .footer{
-margin-top:50px;
+margin-top:60px;
 font-size:14px;
 color:#888;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -88,8 +116,12 @@ color:#888;
 Retro Tech Humor • Programmer Shirts • Birthday Version Series
 </div>
 
+<a class="button" href="products.html">
+Browse Designs
+</a>
+
 <a class="button" href="https://your-etsy-store-link">
-Shop the Etsy Store
+Shop on Etsy
 </a>
 
 <a class="button" href="https://instagram.com/yourprofile">
@@ -100,13 +132,27 @@ Follow on Instagram
 Watch on TikTok
 </a>
 
-<div class="social">
+<div class="section">
 
-<p>Latest collections</p>
+<h2>Featured Design</h2>
 
-<p>
-DOS Command Shirts • Version Birthday Shirts • Retro Tech Designs
-</p>
+<div class="products">
+
+<div class="product">
+
+<img src="images/40TH BIRTHDAY (3).png">
+
+<div class="product-title">
+Version 4.0 Birthday Shirt
+</div>
+
+<a class="small-button" href="YOUR_ETSY_LINK">
+View on Etsy
+</a>
+
+</div>
+
+</div>
 
 </div>
 
