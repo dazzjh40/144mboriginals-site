@@ -114,12 +114,17 @@ if(!birthyear) return;
 const currentYear = new Date().getFullYear();
 const age = currentYear - birthyear;
 
+const major = Math.floor(age / 10);
+const minor = age % 10;
+  
+const version = major + "." + minor;
+
 const result = document.getElementById("result");
 
 const imagePath = "images/version" + birthyear + ".png";
 
 result.innerHTML = `
-<h3>You are Version ${age}.0</h3>
+<h3>You are Version ${version}</h3>
 
 <p>Born in ${birthyear}</p>
 
