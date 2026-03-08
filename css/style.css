@@ -45,10 +45,14 @@ color:#ccc;
 /* version year links */
 
 .versionlist{
-columns:2;
+columns:3;
 list-style:none;
 padding:0;
 margin-top:10px;
+}
+
+.versionlist li{
+margin:5px 0;
 }
 
 .versionlist a{
