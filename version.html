@@ -1,60 +1,3 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Find Your Version | 1.44MB Originals</title>
-
-<meta name="description" content="Find your software version birthday. Enter your birth year to discover your version release.">
-
-<link rel="stylesheet" href="css/style.css">
-
-</head>
-
-<body>
-
-<div class="container">
-
-<img src="logo.png" class="logo">
-
-<h1>Find Your Version</h1>
-
-<div class="tagline">
-Enter your birth year to discover your software release version.
-</div>
-
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="products.html">Products</a>
-<a href="birthday.html">Birthday Shirts</a>
-<a href="version.html">Find Your Version</a>
-<a href="https://handyenough.etsy.com" target="_blank">Etsy Store</a>
-</div>
-
-<div class="section">
-
-<input id="birthyear" type="number" placeholder="Enter birth year" style="padding:12px;font-size:18px;border-radius:6px;border:none;text-align:center;">
-
-<br><br>
-
-<button onclick="calculateVersion()" class="small-button">
-Find My Version
-</button>
-
-<div id="result" style="margin-top:30px;font-size:22px;"></div>
-
-</div>
-
-<div class="footer">
-© 2026 1.44MB Originals
-</div>
-
-</div>
-
 <script>
 
 function calculateVersion(){
@@ -70,28 +13,70 @@ return;
 const age = currentYear - year;
 const version = (age/10).toFixed(1);
 
-let link = "";
+/* Versions currently available in your store */
 
-if(version == "4.0") link = "https://www.etsy.com/listing/4468286122";
-if(version == "3.5") link = "https://www.etsy.com/listing/4467172008";
-if(version == "3.0") link = "https://www.etsy.com/listing/YOUR-LINK";
-if(version == "2.9") link = "https://www.etsy.com/listing/YOUR-LINK";
-if(version == "2.8") link = "https://www.etsy.com/listing/YOUR-LINK";
+const versions = {
 
-let output = "<div>You are running</div>";
-output += "<h2>Version " + version + "</h2>";
-output += "<div>Stable build released " + year + "</div>";
+"4.0": {
+year:"1984",
+link:"https://www.etsy.com/listing/4468286122",
+image:"images/version40.png"
+},
 
-if(link !== ""){
-output += '<br><a class="button" target="_blank" href="'+link+'">View Your Shirt</a>';
+"3.5": {
+year:"1989",
+link:"https://www.etsy.com/listing/4467172008",
+image:"images/version35.png"
+},
+
+"3.0": {
+year:"1994",
+link:"#",
+image:"images/version30.png"
+},
+
+"2.9": {
+year:"1995",
+link:"#",
+image:"images/version29.png"
+},
+
+"2.8": {
+year:"1996",
+link:"#",
+image:"images/version28.png"
+}
+
+};
+
+if(versions[version]){
+
+const item = versions[version];
+
+let output = `
+<div>You are running</div>
+<h2>Version ${version}</h2>
+<div>Stable build released ${item.year}</div>
+
+<img src="${item.image}" style="width:220px;margin-top:20px;border-radius:6px;">
+`;
+
+if(item.link !== "#"){
+output += `<br><a class="button" target="_blank" href="${item.link}">View Your Shirt</a>`;
 }
 
 document.getElementById("result").innerHTML = output;
 
+}else{
+
+document.getElementById("result").innerHTML =
+`<div>You are Version ${version}</div>
+<p>This release is not available yet.</p>
+<p>Check the Birthday Shirt collection.</p>
+<a class="button" href="birthday.html">View Available Versions</a>`;
+
+}
+
 }
 
 </script>
-
-</body>
-</html>
-
