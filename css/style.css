@@ -31,6 +31,38 @@ font-size:36px;
 margin-bottom:10px;
 }
 
+/* Share buttons */
+
+.sharebtn{
+display:inline-block;
+margin:6px;
+padding:10px 16px;
+background:#14e29a;
+color:#000;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
+font-size:14px;
+transition:0.2s;
+}
+
+/* hover */
+
+.sharebtn:hover{
+background:#0fd18e;
+color:#000;
+}
+
+/* remove browser default blue */
+
+.sharebtn:visited{
+color:#000;
+}
+
+.sharebtn:active{
+color:#000;
+}
+
 .tagline{
 color:#ccc;
 margin-bottom:30px;
