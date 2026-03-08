@@ -105,7 +105,7 @@ Use the calculator above to discover your version.
 
 <script>
 
-function calculateVersion() {
+function calculateVersion(){
 
 const birthyear = document.getElementById("birthyear").value;
 
@@ -123,42 +123,21 @@ result.innerHTML = `
 
 <p>Born in ${birthyear}</p>
 
-<img src="${imagePath}" alt="Version ${age} Birthday Shirt">
+<img src="${imagePath}" alt="Version ${age} Birthday Shirt" style="max-width:260px;margin-top:20px;">
 
 <br><br>
-
-<a href="birthday.html" class="button">View Your Shirt</a>
-`;
-
-}
-
-};
-
-if(versions[version]){
-
-const item = versions[version];
-
-let shareText = encodeURIComponent(`I'm running Version ${version} Stable Build. Find yours.`);
-let shareUrl = encodeURIComponent("https://144mboriginals.com/version.html");
-
-let output = `
-<div>You are running</div>
-<h2>Version ${version}</h2>
-<div>Stable build released ${item.year}</div>
-
-<img src="${item.image}" style="width:220px;margin-top:20px;border-radius:6px;">
 
 <div class="sharebox">
 
 <p>Share your version</p>
 
 <a class="sharebtn" target="_blank"
-href="https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}">
+href="https://twitter.com/intent/tweet?text=I'm%20Version%20${age}.0%20Stable%20Build&url=https://144mboriginals.com/version.html">
 Share on X
 </a>
 
 <a class="sharebtn" target="_blank"
-href="https://www.reddit.com/submit?url=${shareUrl}&title=${shareText}">
+href="https://www.reddit.com/submit?url=https://144mboriginals.com/version.html&title=I'm%20Version%20${age}.0%20Stable%20Build">
 Share on Reddit
 </a>
 
@@ -167,23 +146,11 @@ Copy Link
 </button>
 
 </div>
+
+<br>
+
+<a href="birthday.html" class="button">View Your Shirt</a>
 `;
-
-if(item.link !== "#"){
-output += `<br><a class="button" target="_blank" href="${item.link}">View Your Shirt</a>`;
-}
-
-document.getElementById("result").innerHTML = output;
-
-}else{
-
-document.getElementById("result").innerHTML =
-`<div>You are Version ${version}</div>
-<p>This release is not available yet.</p>
-<p>Check the Birthday Shirt collection.</p>
-<a class="button" href="birthday.html">View Available Versions</a>`;
-
-}
 
 }
 
@@ -202,8 +169,6 @@ calculateVersion();
 }
 
 };
-
-/* copy share link */
 
 function copyLink(){
 
