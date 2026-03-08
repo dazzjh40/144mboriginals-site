@@ -44,6 +44,13 @@ color:#ccc;
 
 /* version year links */
 
+.versionlist{
+columns:2;
+list-style:none;
+padding:0;
+margin-top:10px;
+}
+
 .versionlist a{
 color:#14e29a;
 text-decoration:none;
