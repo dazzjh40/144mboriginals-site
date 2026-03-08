@@ -78,9 +78,16 @@ document.getElementById("result").innerHTML = "Please enter a valid birth year."
 return;
 }
 
-const age = currentYear - year;
-const version = (age/10).toFixed(1);
+const age = currentYear - parseInt(year);
 
+/* calculate raw version */
+let version = age / 10;
+
+/* round down to nearest stable release (.0 or .5) */
+version = Math.floor(version * 2) / 2;
+
+/* convert to display format */
+version = version.toFixed(1);
 const versions = {
 
 "4.0": {
