@@ -136,13 +136,15 @@ select.appendChild(requestOption);
 function calculateVersion(){
 
 const birthyear = document.getElementById("birthyear").value;
-const result = document.getElementById("result");
 
-if(!birthyear){
-result.innerHTML = "Please enter a birth year.";
+if(birthyear === "request"){
+
+window.location.href =
+"mailto:hello@144mboriginals.com?subject=Request%20Birthday%20Year";
+
 return;
-}
 
+}
 const currentYear = new Date().getFullYear();
 const age = currentYear - birthyear;
 
