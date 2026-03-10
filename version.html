@@ -114,12 +114,14 @@ Use the calculator above to discover your version.
 <script>
 
 function calculateVersion(){
-gtag('event','version_check',{
-year: birthyear
-});
-const birthyear = document.getElementById("birthyear").value;
 
-if(!birthyear) return;
+const birthyear = document.getElementById("birthyear").value;
+const result = document.getElementById("result");
+
+if(!birthyear){
+result.innerHTML = "Please enter a birth year.";
+return;
+}
 
 const currentYear = new Date().getFullYear();
 const age = currentYear - birthyear;
@@ -129,9 +131,11 @@ const minor = age % 10;
 
 const version = major + "." + minor;
 
-const result = document.getElementById("result");
-
 const imagePath = "images/version" + birthyear + ".png";
+
+/* track calculator usage */
+
+gtag('event','version_check',{year: birthyear});
 
 /* check if image exists */
 
@@ -144,7 +148,7 @@ result.innerHTML = `
 
 <p>Born in ${birthyear}</p>
 
-<img src="${imagePath}" alt="Version ${age} Birthday Shirt" style="max-width:260px;margin-top:20px;">
+<img src="${imagePath}" style="max-width:260px;margin-top:20px;">
 
 <br><br>
 
@@ -155,14 +159,14 @@ result.innerHTML = `
 <a class="sharebtn"
 target="_blank"
 onclick="gtag('event','share_version',{platform:'x'});"
-href="https://twitter.com/intent/tweet?text=I'm%20Version%20${version}%20Stable%20Build&url=https://144mboriginals.com/version.html">
+href="https://twitter.com/intent/tweet?text=I'm%20Version%20${version}%20Stable%20Build&url=https://144mboriginals.com/version.html?year=${birthyear}">
 Share on X
 </a>
 
 <a class="sharebtn"
 target="_blank"
 onclick="gtag('event','share_version',{platform:'reddit'});"
-href="https://www.reddit.com/submit?url=https://144mboriginals.com/version.html&title=I'm%20Version%20${version}%20Stable%20Build">
+href="https://www.reddit.com/submit?url=https://144mboriginals.com/version.html?year=${birthyear}&title=I'm%20Version%20${version}%20Stable%20Build">
 Share on Reddit
 </a>
 
@@ -172,9 +176,10 @@ Copy Link
 </button>
 
 </div>
+
 <br>
 
-<a href="birthday.html" class="button">View Your Shirt</a>
+<a href="birthday.html" class="button">Browse Available Versions</a>
 `;
 
 };
@@ -186,12 +191,9 @@ result.innerHTML = `
 
 <p>Born in ${birthyear}</p>
 
-<p style="margin-top:20px;font-size:18px;">
-Your version shirt is compiling.<br>
-Release coming soon.
-</p>
+<p>Your version shirt is compiling.</p>
 
-<br>
+<p>Release coming soon.</p>
 
 <a href="birthday.html" class="button">Browse Available Versions</a>
 `;
