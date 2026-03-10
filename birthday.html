@@ -147,4 +147,25 @@ View on Etsy
 </div>
 
 </body>
+
+<script>
+
+document.addEventListener("click", function(e) {
+
+const link = e.target.closest("a");
+
+if(!link) return;
+
+if(link.href && link.href.includes("etsy.com")) {
+
+gtag('event', 'etsy_click', {
+link_url: link.href,
+page_location: window.location.pathname
+});
+
+}
+
+});
+
+</script>
 </html>
