@@ -54,7 +54,7 @@ Software developers version software. Now you can version yourself.
 Enter your birth year to discover your release.
 </p>
 
-<input id="birthyear" type="number" placeholder="Enter birth year"
+<select id="birthyear"></select>
 onkeypress="if(event.key==='Enter')calculateVersion()">
 
 <br><br>
@@ -112,7 +112,27 @@ Use the calculator above to discover your version.
 </div>
 
 <script>
+function populateYears(){
 
+const select = document.getElementById("birthyear");
+
+for(let year = 2016; year >= 1956; year--){
+
+const option = document.createElement("option");
+option.value = year;
+option.text = year;
+
+select.appendChild(option);
+
+}
+
+const requestOption = document.createElement("option");
+requestOption.value = "request";
+requestOption.text = "Request a Year";
+
+select.appendChild(requestOption);
+
+}
 function calculateVersion(){
 
 const birthyear = document.getElementById("birthyear").value;
