@@ -6,116 +6,53 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>What Software Version Are You? Birth Year Calculator</title>
+<title>Find Your Software Version | 1.44MB Originals</title>
 
-<meta name="description" content="Enter your birth year to find your software version birthday shirt. Fun programmer style birthday gifts from 1.44MB Originals.">
+<meta name="description" content="Enter your birth year to discover your software version. Retro programmer birthday shirts inspired by classic version numbers.">
 
 <link rel="stylesheet" href="css/style.css">
-<!-- Google tag (gtag.js) -->
+
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-69V22F8BZN"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-69V22F8BZN');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-69V22F8BZN');
 </script>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<img src="logo.png" class="logo">
-
-<h1>What Software Version Are You?</h1>
-
-<div class="tagline">
-Enter your birth year to see your software version
-</div>
-
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="products.html">Products</a>
-<a href="originals.html">1.44MB Originals</a>
-<a href="birthday.html">Birthday Shirts</a>
-<a href="vanlife.html">Vanlife</a>
-<a href="fishing.html">Fishing</a>
-<a href="version.html">Find Your Version</a>
-<a href="https://www.etsy.com/shop/HandyEnough" target="_blank">Etsy Store</a>
-</div>
-
-<div class="section">
+<h1>Find Your Version</h1>
+<p>Software developers version software. Now you can version yourself.</p>
 
 <h2>Check Your Version</h2>
 
-<p>
-Software developers version software. Now you can version yourself.
-Enter your birth year to discover your release.
-</p>
-
 <select id="birthyear"></select>
+
 <br><br>
-<button class="button" onclick="calculateVersion()">
+
+<button onclick="calculateVersion()" class="button">
 Check Version
 </button>
 
-</div>
-
-<!-- SEO content for search engines -->
-
-<div class="section">
-
-<h2>Check Your Birth Year Version</h2>
-
-<p>Select your birth year to see your software version.</p>
-
-<ul class="versionlist">
-
-<li><a href="version.html?year=1975">Born 1975</a></li>
-<li><a href="version.html?year=1976">Born 1976</a></li>
-<li><a href="version.html?year=1977">Born 1977</a></li>
-<li><a href="version.html?year=1978">Born 1978</a></li>
-<li><a href="version.html?year=1979">Born 1979</a></li>
-<li><a href="version.html?year=1980">Born 1980</a></li>
-<li><a href="version.html?year=1981">Born 1981</a></li>
-<li><a href="version.html?year=1982">Born 1982</a></li>
-<li><a href="version.html?year=1983">Born 1983</a></li>
-<li><a href="version.html?year=1984">Born 1984</a></li>
-<li><a href="version.html?year=1985">Born 1985</a></li>
-<li><a href="version.html?year=1986">Born 1986</a></li>
-<li><a href="version.html?year=1987">Born 1987</a></li>
-<li><a href="version.html?year=1988">Born 1988</a></li>
-<li><a href="version.html?year=1989">Born 1989</a></li>
-<li><a href="version.html?year=1990">Born 1990</a></li>
-<li><a href="version.html?year=1991">Born 1991</a></li>
-
-</ul>
-
-</div>
-
-  <p>
-Find your software version based on your birth year. Each release represents a stable decade build.
-If you were born in 1984 you are Version 4.0, while someone born in 1989 runs Version 3.5.
-Use the calculator above to discover your version.
-</p>
-  
-<div id="result" class="section"></div>
-
-<div class="footer">
-© 2026 1.44MB Originals
-</div>
+<div id="result"></div>
 
 </div>
 
 <script>
-function populateYears(){
+
+/* populate dropdown */
 
 const select = document.getElementById("birthyear");
 
-for(let year = 2016; year >= 1956; year--){
+for(let year = 1956; year <= 2016; year++){
 
-const option = document.createElement("option");
+let option = document.createElement("option");
 option.value = year;
 option.text = year;
 
@@ -123,111 +60,91 @@ select.appendChild(option);
 
 }
 
-const requestOption = document.createElement("option");
-requestOption.value = "request";
-requestOption.text = "Request a Year";
+/* available shirt years */
 
-select.appendChild(requestOption);
+const availableYears = [
+1976,1977,1978,1979,
+1980,1981,1982,1983,
+1984,1985,1986,1987,
+1988,1989,1990
+];
 
-}
+/* calculator */
+
 function calculateVersion(){
 
-const birthyear = document.getElementById("birthyear").value;
+const year = parseInt(document.getElementById("birthyear").value);
 
-if(birthyear === "request"){
-
-window.location.href =
-"mailto:hello@144mboriginals.com?subject=Request%20Birthday%20Year";
-
-return;
-
-}
 const currentYear = new Date().getFullYear();
-const age = currentYear - birthyear;
+
+const age = currentYear - year;
+
+/* convert age to version format */
 
 const major = Math.floor(age / 10);
 const minor = age % 10;
 
 const version = major + "." + minor;
 
-const imagePath = "images/version" + birthyear + ".png";
+let html = "";
 
-/* track calculator usage */
+html += "<h2>You are Version " + version + "</h2>";
+html += "<p>Born in " + year + "</p>";
 
-gtag('event','version_check',{year: birthyear});
+/* if shirt exists */
 
-/* check if image exists */
+if(availableYears.includes(year)){
 
-const img = new Image();
+html += "<img src='images/version" + age + ".png' alt='Version " + age + " Birthday Shirt' style='max-width:300px;'>";
 
-img.onload = function(){
+html += "<br><br>";
 
-result.innerHTML = `
-<h3>You are Version ${version}</h3>
+html += "<a class='button' target='_blank' onclick=\"gtag('event','etsy_click',{event_category:'shop',event_label:'version_shirt'})\" href='https://www.etsy.com/shop/HandyEnough'>View Your Shirt</a>";
 
-<p>Born in ${birthyear}</p>
+}else{
 
-<img src="${imagePath}" style="max-width:260px;margin-top:20px;">
-
-<br><br>
-
-<div class="sharebox">
-
-<p>Share your version</p>
-
-<a class="sharebtn"
-target="_blank"
-onclick="gtag('event','share_version',{platform:'x'});"
-href="https://twitter.com/intent/tweet?text=I'm%20Version%20${version}%20Stable%20Build&url=https://144mboriginals.com/version.html?year=${birthyear}">
-Share on X
-</a>
-
-<a class="sharebtn"
-target="_blank"
-onclick="gtag('event','share_version',{platform:'reddit'});"
-href="https://www.reddit.com/submit?url=https://144mboriginals.com/version.html?year=${birthyear}&title=I'm%20Version%20${version}%20Stable%20Build">
-Share on Reddit
-</a>
-
-<button class="sharebtn"
-onclick="gtag('event','share_version',{platform:'copy'}); copyLink();">
-Copy Link
-</button>
-
-</div>
-
-<br>
-
-<a href="birthday.html" class="button">Browse Available Versions</a>
-`;
-
-};
-
-img.onerror = function(){
-
-result.innerHTML = `
-<h3>You are Version ${version}</h3>
-
-<p>Born in ${birthyear}</p>
-
-<p>Your version shirt is compiling.</p>
-
-<p>Release coming soon.</p>
-
-<a href="birthday.html" class="button">Browse Available Versions</a>
-`;
-
-};
-
-img.src = imagePath;
+html += "<p><strong>Your year is coming soon.</strong></p>";
+html += "<p>You can request it below.</p>";
 
 }
 
-/* allow calculator to run from URL */
+/* share box */
+
+html += "<div class='sharebox'>";
+
+html += "<p>Share your version</p>";
+
+html += "<a class='sharebtn' target='_blank' onclick=\"gtag('event','share_x')\" href='https://twitter.com/intent/tweet?text=I am Version " + version + " Stable Build&url=https://144mboriginals.com/version.html?year=" + year + "'>Share on X</a>";
+
+html += "<a class='sharebtn' target='_blank' onclick=\"gtag('event','share_reddit')\" href='https://www.reddit.com/submit?url=https://144mboriginals.com/version.html?year=" + year + "&title=I am Version " + version + " Stable Build'>Share on Reddit</a>";
+
+html += "<button class='sharebtn' onclick='copyLink(" + year + ")'>Copy Link</button>";
+
+html += "</div>";
+
+document.getElementById("result").innerHTML = html;
+
+/* track calculation */
+
+gtag('event','version_check',{event_category:'calculator',event_label:year});
+
+}
+
+/* copy link */
+
+function copyLink(year){
+
+const url = "https://144mboriginals.com/version.html?year=" + year;
+
+navigator.clipboard.writeText(url);
+
+alert("Link copied");
+
+}
+
+/* auto run if year in URL */
 
 window.onload = function(){
-
-populateYears();
 
 const params = new URLSearchParams(window.location.search);
 const year = params.get("year");
@@ -238,14 +155,6 @@ document.getElementById("birthyear").value = year;
 calculateVersion();
 
 }
-
-};
-
-function copyLink(){
-
-navigator.clipboard.writeText(window.location.href);
-
-alert("Link copied. Share it!");
 
 }
 
