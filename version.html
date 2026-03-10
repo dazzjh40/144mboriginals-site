@@ -152,22 +152,26 @@ result.innerHTML = `
 
 <p>Share your version</p>
 
-<a class="sharebtn" target="_blank"
+<a class="sharebtn"
+target="_blank"
+onclick="gtag('event','share_version',{platform:'x'});"
 href="https://twitter.com/intent/tweet?text=I'm%20Version%20${version}%20Stable%20Build&url=https://144mboriginals.com/version.html">
 Share on X
 </a>
 
-<a class="sharebtn" target="_blank"
+<a class="sharebtn"
+target="_blank"
+onclick="gtag('event','share_version',{platform:'reddit'});"
 href="https://www.reddit.com/submit?url=https://144mboriginals.com/version.html&title=I'm%20Version%20${version}%20Stable%20Build">
 Share on Reddit
 </a>
 
-<button class="sharebtn" onclick="copyLink()">
+<button class="sharebtn"
+onclick="gtag('event','share_version',{platform:'copy'}); copyLink();">
 Copy Link
 </button>
 
 </div>
-
 <br>
 
 <a href="birthday.html" class="button">View Your Shirt</a>
