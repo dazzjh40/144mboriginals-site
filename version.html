@@ -114,7 +114,9 @@ Use the calculator above to discover your version.
 <script>
 
 function calculateVersion(){
-
+gtag('event','version_check',{
+year: birthyear
+});
 const birthyear = document.getElementById("birthyear").value;
 
 if(!birthyear) return;
