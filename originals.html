@@ -145,6 +145,14 @@ View on Etsy
 
 </body>
 <script>
+fetch("nav.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("nav-placeholder").innerHTML = data;
+  });
+</script>
+  
+<script>
 
 document.addEventListener("click", function(e) {
 
