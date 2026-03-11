@@ -28,6 +28,8 @@
 
 <img src="logo.png" class="logo">
 
+  <div id="nav-placeholder"></div>
+
 <h1>Fishing Apparel</h1>
 
 <div class="tagline">
@@ -121,6 +123,17 @@ fetch("nav.html")
   .then(data => {
     document.getElementById("nav-placeholder").innerHTML = data;
   });
+</script>
+<script>
+
+const currentPage = location.pathname.split("/").pop();
+
+document.querySelectorAll(".nav a").forEach(link => {
+    if(link.getAttribute("href") === currentPage){
+        link.classList.add("active");
+    }
+});
+
 </script>
 </body>
 <script>
