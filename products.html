@@ -116,7 +116,13 @@ are available through our Etsy store.
 </div>
 
 </div>
-
+<script>
+fetch("nav.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("nav-placeholder").innerHTML = data;
+  });
+</script>
 </body>
 
 <script>
@@ -140,6 +146,7 @@ page_location: window.location.pathname
 
 </script>  
 </html>
+
 
 
 
