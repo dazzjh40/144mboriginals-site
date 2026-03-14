@@ -30,8 +30,12 @@ const DOG_APPAREL_DATA = {
 
         "boxer_yellow_flat.webp",
         "boxer_yellow_pose.webp",
+        'boxer_pink_flat.webp'
+        'boxer_black_flat.webp'
 
         "chihuahua_grey_pose.webp",
+        'chihuahua_black_fold.webp'
+        'chihuahua_maroon_flat.webp'
 
         "dachshund_yellow_flat.webp",
         "dachshund_yellow_pose.webp",
