@@ -187,7 +187,7 @@ document.querySelectorAll(".nav a").forEach(link => {
 });
 
 </script>
-  <script>
+ <script>
 document.addEventListener("DOMContentLoaded", async () => {
     const navPlaceholder = document.getElementById("nav-placeholder");
 
@@ -207,6 +207,17 @@ document.addEventListener("DOMContentLoaded", async () => {
                 link.classList.add("active");
             }
         });
+
+        const navToggle = document.getElementById("nav-toggle");
+        const siteNav = document.getElementById("site-nav");
+
+        if (navToggle && siteNav) {
+            navToggle.addEventListener("click", () => {
+                const isOpen = siteNav.classList.toggle("nav-open");
+                navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+            });
+        }
+
     } catch (error) {
         console.error("Navigation load error:", error);
     }
