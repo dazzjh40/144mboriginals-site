@@ -17,6 +17,7 @@ const DOG_APPAREL_DATA = {
         boxer: "Boxer",
         chihuahua: "Chihuahua",
         goldenretriever: "Golden Retriever"
+        springer spanial: "Springer Spaniel"
     },
 
     imageFiles: [
