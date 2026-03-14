@@ -7,6 +7,7 @@ const DOG_APPAREL_DATA = {
         boxer: "https://www.etsy.com/uk/listing/4470283569/boxer-dog-mom-shirt-boxer-mom-gift-cute",
         chihuahua: "https://www.etsy.com/uk/listing/4470416074/chihuahua-mom-shirt-chihuahua-dog-mom",
         goldenretriever: "https://www.etsy.com/uk/listing/4470246955/golden-retriever-mom-shirt-dog-mom-gift"
+
     },
 
     breedNames: {
@@ -17,7 +18,7 @@ const DOG_APPAREL_DATA = {
         boxer: "Boxer",
         chihuahua: "Chihuahua",
         goldenretriever: "Golden Retriever"
-        springer spanial: "Springer Spaniel"
+
     },
 
     imageFiles: [
