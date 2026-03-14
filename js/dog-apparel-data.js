@@ -21,40 +21,41 @@ const DOG_APPAREL_DATA = {
 
     },
 
-    imageFiles: [
-        "bordercollie_blue_flat.webp",
-        "bordercollie_green_flat.webp",
-        "bordercollie_grey_flat.webp",
-        "bordercollie_offwhite_flat.webp",
-        "bordercollie_offwhite_fold.webp",
-        "bordercollie_pink_flat.webp",
-        "bordercollie_pink_pose.webp",
+   imageFiles: [
+    "bordercollie_blue_flat.webp",
+    "bordercollie_green_flat.webp",
+    "bordercollie_grey_flat.webp",
+    "bordercollie_offwhite_flat.webp",
+    "bordercollie_offwhite_fold.webp",
+    "bordercollie_pink_flat.webp",
+    "bordercollie_pink_pose.webp",
 
-        "boxer_yellow_flat.webp",
-        "boxer_yellow_pose.webp",
-        'boxer_pink_flat.webp'
-        'boxer_black_flat.webp'
+    "boxer_black_flat.webp",
+    "boxer_pink_flat.webp",
+    "boxer_yellow_flat.webp",
+    "boxer_yellow_pose.webp",
 
-        "chihuahua_grey_pose.webp",
-        'chihuahua_black_fold.webp'
-        'chihuahua_maroon_flat.webp'
+    "chihuahua_black_fold.webp",
+    "chihuahua_grey_pose.webp",
+    "chihuahua_maroon_flat.webp",
 
-        "dachshund_yellow_flat.webp",
-        "dachshund_yellow_pose.webp",
+    "dachshund_yellow_flat.webp",
+    "dachshund_yellow_pose.webp",
 
-        "frenchbd_black_fold.webp",
-        "frenchbd_grey_flat.webp",
-        "frenchbd_maroon_hang.webp",
-        "frenchbd_red_flat.webp",
-        "frenchbd_red_pose.webp",
+    "frenchbd_black_fold.webp",
+    "frenchbd_grey_flat.webp",
+    "frenchbd_maroon_hang.webp",
+    "frenchbd_red_flat.webp",
+    "frenchbd_red_pose.webp",
 
-        "goldenretriever_dkgrey_flat.webp",
-        "goldenretriever_grey_pose.webp",
+    "goldenretriever_dkgrey_flat.webp",
+    "goldenretriever_grey_pose.webp",
 
-        "labrador_dkblue_flat.webp",
-        "labrador_grey_fold.webp",
-        "labrador_offwhite_fold.webp",
-        "labrador_purple_flat.webp",
-        "labrador_white_pose.webp"
-    ]
+    "labrador_dkblue_flat.webp",
+    "labrador_grey_fold.webp",
+    "labrador_offwhite_fold.webp",
+    "labrador_purple_flat.webp",
+    "labrador_white_pose.webp"
+]
+
 };
