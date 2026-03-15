@@ -1,6 +1,6 @@
 const BIRTHDAY_APPAREL_DATA = {
     yearLinks: {
-        1976: "https://www.etsy.com/your-link-1976",
+        1976: "https://www.etsy.com/uk/listing/4468774851/50th-birthday-shirt-born-1976-version-50",
         1984: "https://www.etsy.com/listing/4468286122",
         1989: "https://www.etsy.com/uk/listing/4468282340/1989-stable-build-version-35-t-shirt",
         1994: "https://www.etsy.com/uk/listing/4468279256/1994-stable-build-version-30-t-shirt",
