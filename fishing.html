@@ -1,124 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Fishing Apparel | 1.44MB Originals</title>
-
-<meta name="description" content="Fishing inspired apparel for anglers and outdoor enthusiasts. Funny fishing shirts and gifts for fishermen from 1.44MB Originals.">
-
+<meta name="description" content="Fishing inspired apparel, mugs and gifts for anglers and outdoor enthusiasts. Funny fishing designs from 1.44MB Originals.">
 <link rel="stylesheet" href="css/style.css">
-<!-- Google tag (gtag.js) -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-69V22F8BZN"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-69V22F8BZN');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-69V22F8BZN');
 </script>
 </head>
-
 <body>
 
 <div class="container">
 
-<img src="logo.png" class="logo">
+    <img src="logo.png" class="logo" alt="1.44MB Originals logo">
 
-  <div id="nav-placeholder"></div>
+    <h1>Fishing Apparel</h1>
 
-<h1>Fishing Apparel</h1>
+    <div class="tagline">
+        Angler Humor • Lake Life • Fishing Inspired Designs
+    </div>
 
-<div class="tagline">
-Angler Humor • Lake Life • Fishing Inspired Designs
-</div>
+    <div id="nav-placeholder"></div>
 
-<div id="nav-placeholder"></div>
+    <div id="fishing-content"></div>
 
-<div class="section">
+    <div class="section">
+        <h2>About Our Fishing Designs</h2>
 
-<h2>Fishing Designs</h2>
+        <p>
+            Fishing inspired products for anglers who enjoy lakes, rivers and time on the water.
+            Browse funny and giftable fishing designs across apparel, mugs and more.
+        </p>
 
-<div class="products">
+        <p>
+            These designs make great gifts for fishermen and outdoor enthusiasts.
+        </p>
+    </div>
 
-<a href="https://www.etsy.com/uk/listing/4437200032/fishing-keeps-me-out-of-trouble-mostly" target="_blank">
-<div class="product">
-<img src="images/fishing1.png">
-<div class="product-title">
-Fishing Keeps Me Out of Trouble Mostly Shirt
-</div>
-<div class="small-button">
-View on Etsy
-</div>
-</div>
-</a>
-
-<a href="https://www.etsy.com/uk/listing/4435510642/unisex-garment-dyed-t-shirt-fishermen" target="_blank">
-<div class="product">
-<img src="images/fishing2.png">
-<div class="product-title">
-Just One More Cast Shirt
-</div>
-<div class="small-button">
-View on Etsy
-</div>
-</div>
-</a>
-
-<a href="https://www.etsy.com/uk/listing/4437196320/fishing-keeps-me-out-of-trouble-mostly" target="_blank">
-<div class="product">
-<img src="images/fishing3.png">
-<div class="product-title">
-Fishing keeps me out of trouble mostly Mug
-</div>
-<div class="small-button">
-View on Etsy
-</div>
-</div>
-</a>
-
-<a href="https://www.etsy.com/uk/listing/4435546398/its-not-the-size-that-matters-fishing" target="_blank">
-<div class="product">
-<img src="images/fishing4.png">
-<div class="product-title">
-Its not the size that matters fishing Shirt
-</div>
-<div class="small-button">
-View on Etsy
-</div>
-</div>
-</a>
+    <div class="footer">
+        © 2026 1.44MB Originals
+    </div>
 
 </div>
 
-</div>
+<script src="js/fishing-data.js"></script>
 
-<div class="section">
-
-<h2>About Our Fishing Designs</h2>
-
-<p>
-Fishing apparel designed for anglers who enjoy lakes, rivers and coastal fishing. Our fishing themed shirts celebrate the relaxation, humor and patience that come with life on the water.
-</p>
-
-<p>
-These designs make great gifts for fishermen and outdoor enthusiasts.
-</p>
-
-</div>
-
-<div class="footer">
-
-© 2026 1.44MB Originals
-
-</div>
-
-</div>
 <script>
 document.addEventListener("DOMContentLoaded", async () => {
+    await loadNavigation();
+    renderFishing();
+});
+
+async function loadNavigation() {
     const navPlaceholder = document.getElementById("nav-placeholder");
 
     try {
@@ -130,7 +70,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         navPlaceholder.innerHTML = await response.text();
 
-        const currentPage = location.pathname.split("/").pop() || "index.html";
+        const currentPage = location.pathname.split("/").pop() || "fishing.html";
 
         document.querySelectorAll(".nav a").forEach(link => {
             if (link.getAttribute("href") === currentPage) {
@@ -151,27 +91,235 @@ document.addEventListener("DOMContentLoaded", async () => {
     } catch (error) {
         console.error("Navigation load error:", error);
     }
-});
-</script>
-</body>
-<script>
-
-document.addEventListener("click", function(e) {
-
-const link = e.target.closest("a");
-
-if(!link) return;
-
-if(link.href && link.href.includes("etsy.com")) {
-
-gtag('event', 'etsy_click', {
-link_url: link.href,
-page_location: window.location.pathname
-});
-
 }
 
-});
+function renderFishing() {
+    const container = document.getElementById("fishing-content");
+    const grouped = groupImagesByDesign(FISHING_DATA.imageFiles);
 
+    Object.keys(FISHING_DATA.designNames).forEach(designKey => {
+        const images = grouped[designKey] || [];
+
+        if (!images.length) {
+            return;
+        }
+
+        images.sort(sortImages);
+
+        const mainImage = images[0];
+        const etsyLink = FISHING_DATA.designLinks[designKey] || "#";
+
+        const section = document.createElement("div");
+        section.className = "section";
+
+        section.innerHTML = `
+            <h2>${FISHING_DATA.designNames[designKey]}</h2>
+
+            <div class="breed-gallery">
+                <div class="breed-main">
+                    <a id="${designKey}-link" href="${etsyLink}" target="_blank" rel="noopener noreferrer">
+                        <img id="${designKey}-main" src="${mainImage.src}" alt="${mainImage.alt}" loading="lazy">
+                    </a>
+
+                    <div class="product-title">
+                        <a id="${designKey}-title" href="${etsyLink}" target="_blank" rel="noopener noreferrer">
+                            ${mainImage.title}
+                        </a>
+                    </div>
+
+                    <a class="small-button" id="${designKey}-button" href="${etsyLink}" target="_blank" rel="noopener noreferrer">
+                        View on Etsy
+                    </a>
+
+                    <p class="smalltext">Available on Etsy • Secure checkout</p>
+                </div>
+
+                <div class="breed-thumbs">
+                    ${images.map((img, index) => `
+                        <img
+                            src="${img.src}"
+                            alt="${img.alt}"
+                            class="${index === 0 ? "active-thumb" : ""}"
+                            onclick="setFishingImage('${designKey}', '${img.src}', '${escapeSingleQuotes(img.title)}', '${escapeSingleQuotes(img.alt)}', '${etsyLink}', this)"
+                        >
+                    `).join("")}
+                </div>
+            </div>
+        `;
+
+        container.appendChild(section);
+    });
+}
+
+function groupImagesByDesign(files) {
+    const grouped = {};
+
+    files.forEach(filename => {
+        const parsed = parseFilename(filename);
+        if (!parsed) return;
+
+        if (!grouped[parsed.design]) {
+            grouped[parsed.design] = [];
+        }
+
+        grouped[parsed.design].push({
+            filename,
+            src: `images/small_img/fishing/${filename}`,
+            design: parsed.design,
+            colour: parsed.colour,
+            product: parsed.product,
+            view: parsed.view,
+            title: buildTitle(parsed),
+            alt: buildAlt(parsed)
+        });
+    });
+
+    return grouped;
+}
+
+function parseFilename(filename) {
+    const clean = filename.replace(".webp", "");
+    const parts = clean.split("_");
+
+    if (parts.length < 5) {
+        return null;
+    }
+
+    const category = parts[0];
+    const design = parts[1];
+    const colour = parts[2];
+    const product = parts[3];
+    const view = parts.slice(4).join("_");
+
+    if (category !== "fishing") {
+        return null;
+    }
+
+    return { design, colour, product, view };
+}
+
+function sortImages(a, b) {
+    const viewPriority = view => {
+        if (view.includes("pose")) return 0;
+        if (view.includes("flat")) return 1;
+        if (view.includes("fold")) return 2;
+        if (view.includes("hang")) return 3;
+        return 9;
+    };
+
+    const aPriority = viewPriority(a.view);
+    const bPriority = viewPriority(b.view);
+
+    if (aPriority !== bPriority) {
+        return aPriority - bPriority;
+    }
+
+    return a.product.localeCompare(b.product);
+}
+
+function buildTitle({ design, colour, product, view }) {
+    return `${formatDesignName(design)} ${formatWord(colour)} ${formatProduct(product)} ${formatView(view)}`;
+}
+
+function buildAlt({ design, colour, product, view }) {
+    return `${formatDesignName(design)} design on ${formatWord(colour).toLowerCase()} ${formatProduct(product).toLowerCase()}, ${formatView(view).toLowerCase()} view`;
+}
+
+function formatDesignName(design) {
+    return FISHING_DATA.designNames[design] || design;
+}
+
+function formatWord(word) {
+    const map = {
+        dkblue: "Dark Blue",
+        dkgrey: "Dark Grey",
+        ltgrey: "Light Grey",
+        offwhite: "Off White",
+        paleblue: "Pale Blue"
+    };
+
+    if (map[word]) {
+        return map[word];
+    }
+
+    return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+function formatProduct(product) {
+    const map = {
+        tee: "T Shirt",
+        tshirt: "T Shirt",
+        hoodie: "Hoodie",
+        sweatshirt: "Sweatshirt",
+        mug: "Mug",
+        cushion: "Cushion",
+        drinkware: "Drinkware"
+    };
+
+    return map[product] || product.charAt(0).toUpperCase() + product.slice(1);
+}
+
+function formatView(view) {
+    const map = {
+        pose: "Pose",
+        flat: "Flat",
+        fold: "Folded",
+        hang: "Hanging"
+    };
+
+    return map[view] || view.charAt(0).toUpperCase() + view.slice(1);
+}
+
+function escapeSingleQuotes(text) {
+    return text.replace(/'/g, "\\'");
+}
+
+function setFishingImage(design, imageSrc, title, altText, link, thumb) {
+    const mainImage = document.getElementById(`${design}-main`);
+    const titleLink = document.getElementById(`${design}-title`);
+    const mainLink = document.getElementById(`${design}-link`);
+    const buttonLink = document.getElementById(`${design}-button`);
+
+    if (mainImage) {
+        mainImage.src = imageSrc;
+        mainImage.alt = altText;
+    }
+
+    if (titleLink) {
+        titleLink.textContent = title;
+        titleLink.href = link;
+    }
+
+    if (mainLink) {
+        mainLink.href = link;
+    }
+
+    if (buttonLink) {
+        buttonLink.href = link;
+    }
+
+    const gallery = thumb.closest(".breed-gallery");
+    if (gallery) {
+        gallery.querySelectorAll(".breed-thumbs img").forEach(img => {
+            img.classList.remove("active-thumb");
+        });
+        thumb.classList.add("active-thumb");
+    }
+}
+
+document.addEventListener("click", function(e) {
+    const link = e.target.closest("a");
+
+    if (!link) return;
+
+    if (link.href && link.href.includes("etsy.com") && typeof gtag === "function") {
+        gtag("event", "etsy_click", {
+            link_url: link.href,
+            page_location: window.location.pathname
+        });
+    }
+});
 </script>
+
+</body>
 </html>
