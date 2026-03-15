@@ -13,7 +13,7 @@ const FISHING_DATA = {
 
     imageFiles: [
         "fishing_trouble_grey_sweatshirt_pose.webp",
-        "fishing_cast_white_tee_pose.webp",
+        "fishing_upatthecrack_white_tee_pose.webp",
         "fishing_trouble_white_mug_flat.webp",
         "fishing_size_black_sweatshirt_pose.webp"
     ]
