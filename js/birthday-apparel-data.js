@@ -18,7 +18,8 @@ const BIRTHDAY_APPAREL_DATA = {
     },
 
     imageFiles: [
-        "birthday_1976_ltblue_pose.webp"
+        "birthday_1976_ltblue_pose.webp",
+        "birthday_1976_green_fold.webp",
         "birthday_1976_pink_flat.webp",
         "birthday_1984_dkblue_flat.webp",
         "birthday_1984_paleblue_flat.webp",
