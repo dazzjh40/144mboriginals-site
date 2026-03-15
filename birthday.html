@@ -1,147 +1,64 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Version Birthday Shirts | 1.44MB Originals</title>
-
-<meta name="description" content="Software version birthday shirts inspired by retro computing. Perfect gifts for programmers, developers and tech enthusiasts.">
-
+<meta name="description" content="Software version birthday shirts inspired by retro computing. Funny birthday gifts for programmers, developers and tech enthusiasts.">
 <link rel="stylesheet" href="css/style.css">
-<!-- Google tag (gtag.js) -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-69V22F8BZN"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-69V22F8BZN');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-69V22F8BZN');
 </script>
 </head>
-
 <body>
 
 <div class="container">
 
-<img src="logo.png" class="logo">
+    <img src="logo.png" class="logo" alt="1.44MB Originals logo">
 
-<h1>Version Birthday Shirts</h1>
+    <h1>Version Birthday Shirts</h1>
 
-<div class="tagline">
-Because humans also ship stable releases.
-</div>
+    <div class="tagline">
+        Because humans also ship stable releases.
+    </div>
 
-<div id="nav-placeholder"></div>
+    <div id="nav-placeholder"></div>
 
-<div class="section">
+    <div id="birthday-apparel-content"></div>
 
-<div class="products">
+    <div class="section">
+        <h2>About Our Birthday Shirts</h2>
 
-<div class="product">
+        <p>
+            Funny version birthday shirts inspired by retro software releases, coding culture and geek humour.
+            A great gift idea for developers, programmers, tech workers and anyone who appreciates a stable build joke.
+        </p>
 
-<a href="https://www.etsy.com/listing/4468286122" target="_blank" rel="noopener">
+        <p>
+            All designs are available through our Etsy store.
+        </p>
+    </div>
 
-<img src="images/version1984.png">
-
-<div class="product-title">
-Version 4.0 • Born 1984
-</div>
-
-</a>
-
-<a class="small-button" href="https://www.etsy.com/listing/4468286122" target="_blank">
-View on Etsy
-</a>
-
-</div>
-
-<div class="product">
-
-<a href="https://www.etsy.com/uk/listing/4468282340/1989-stable-build-version-35-t-shirt" target="_blank" rel="noopener">
-
-<img src="images/version1989.png">
-
-<div class="product-title">
-Version 3.5 • Born 1989
-</div>
-
-</a>
-
-<a class="small-button" href="https://www.etsy.com/uk/listing/4468282340/1989-stable-build-version-35-t-shirt" target="_blank">
-View on Etsy
-</a>
+    <div class="footer">
+        © 2026 1.44MB Originals
+    </div>
 
 </div>
 
-<div class="product">
+<script src="js/birthday-apparel-data.js"></script>
 
-<a href="https://www.etsy.com/uk/listing/4468279256/1994-stable-build-version-30-t-shirt" target="_blank" rel="noopener">
-
-<img src="images/version1994.png">
-
-<div class="product-title">
-Version 3.0 • Born 1994
-</div>
-
-</a>
-
-<a class="https://www.etsy.com/uk/listing/4468279256/1994-stable-build-version-30-t-shirt" target="_blank">
-View on Etsy
-</a>
-
-</div>
-
-<div class="product">
-
-<a href="https://www.etsy.com/uk/listing/4468262211/1995-stable-build-version-29-t-shirt" target="_blank" rel="noopener">
-
-<img src="images/version1995.png">
-
-<div class="product-title">
-Version 2.9 • Born 1995
-</div>
-
-</a>
-
-<a class="small-button" href="https://www.etsy.com/uk/listing/4468262211/1995-stable-build-version-29-t-shirt" target="_blank">
-View on Etsy
-</a>
-
-</div>
-
-<div class="product">
-
-<a href="https://www.etsy.com/uk/listing/4468257965/1996-birthday-shirt-version-28-stable" target="_blank" rel="noopener">
-
-<img src="images/version1996.png">
-
-<div class="product-title">
-Version 2.8 • Born 1996
-</div>
-
-</a>
-
-<a class="small-button" href="https://www.etsy.com/listing/4467000000" target="_blank">
-View on Etsy
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="footer">
-© 2026 1.44MB Originals
-</div>
-
-</div>
 <script>
 document.addEventListener("DOMContentLoaded", async () => {
+    await loadNavigation();
+    renderBirthdayApparel();
+});
+
+async function loadNavigation() {
     const navPlaceholder = document.getElementById("nav-placeholder");
 
     try {
@@ -153,7 +70,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         navPlaceholder.innerHTML = await response.text();
 
-        const currentPage = location.pathname.split("/").pop() || "index.html";
+        const currentPage = location.pathname.split("/").pop() || "birthday.html";
 
         document.querySelectorAll(".nav a").forEach(link => {
             if (link.getAttribute("href") === currentPage) {
@@ -174,28 +91,220 @@ document.addEventListener("DOMContentLoaded", async () => {
     } catch (error) {
         console.error("Navigation load error:", error);
     }
-});
-</script>
-</body>
-
-<script>
-
-document.addEventListener("click", function(e) {
-
-const link = e.target.closest("a");
-
-if(!link) return;
-
-if(link.href && link.href.includes("etsy.com")) {
-
-gtag('event', 'etsy_click', {
-link_url: link.href,
-page_location: window.location.pathname
-});
-
 }
 
-});
+function renderBirthdayApparel() {
+    const container = document.getElementById("birthday-apparel-content");
+    const grouped = groupImagesByYear(BIRTHDAY_APPAREL_DATA.imageFiles);
 
+    Object.keys(BIRTHDAY_APPAREL_DATA.yearMeta)
+        .sort((a, b) => Number(a) - Number(b))
+        .forEach(yearKey => {
+            const images = grouped[yearKey] || [];
+
+            if (!images.length) {
+                return;
+            }
+
+            images.sort(sortImages);
+
+            const mainImage = images[0];
+            const etsyLink = BIRTHDAY_APPAREL_DATA.yearLinks[yearKey] || "#";
+            const heading = BIRTHDAY_APPAREL_DATA.yearMeta[yearKey].title;
+
+            const section = document.createElement("div");
+            section.className = "section";
+
+            section.innerHTML = `
+                <h2>${heading}</h2>
+
+                <div class="breed-gallery">
+                    <div class="breed-main">
+                        <a id="birthday-${yearKey}-link" href="${etsyLink}" target="_blank" rel="noopener noreferrer">
+                            <img id="birthday-${yearKey}-main" src="${mainImage.src}" alt="${mainImage.alt}" loading="lazy">
+                        </a>
+
+                        <div class="product-title">
+                            <a id="birthday-${yearKey}-title" href="${etsyLink}" target="_blank" rel="noopener noreferrer">
+                                ${mainImage.title}
+                            </a>
+                        </div>
+
+                        <a class="small-button" id="birthday-${yearKey}-button" href="${etsyLink}" target="_blank" rel="noopener noreferrer">
+                            View on Etsy
+                        </a>
+
+                        <p class="smalltext">Available on Etsy • Secure checkout</p>
+                    </div>
+
+                    <div class="breed-thumbs">
+                        ${images.map((img, index) => `
+                            <img
+                                src="${img.src}"
+                                alt="${img.alt}"
+                                class="${index === 0 ? "active-thumb" : ""}"
+                                onclick="setBirthdayImage('${yearKey}', '${img.src}', '${escapeSingleQuotes(img.title)}', '${escapeSingleQuotes(img.alt)}', '${etsyLink}', this)"
+                            >
+                        `).join("")}
+                    </div>
+                </div>
+            `;
+
+            container.appendChild(section);
+        });
+}
+
+function groupImagesByYear(files) {
+    const grouped = {};
+
+    files.forEach(filename => {
+        const parsed = parseFilename(filename);
+        if (!parsed) return;
+
+        if (!grouped[parsed.year]) {
+            grouped[parsed.year] = [];
+        }
+
+        grouped[parsed.year].push({
+            filename,
+            src: `images/small_img/birthday/${filename}`,
+            year: parsed.year,
+            color: parsed.color,
+            type: parsed.type,
+            title: buildTitle(parsed),
+            alt: buildAlt(parsed)
+        });
+    });
+
+    return grouped;
+}
+
+function parseFilename(filename) {
+    const clean = filename.replace(".webp", "");
+    const parts = clean.split("_");
+
+    if (parts.length < 4) {
+        return null;
+    }
+
+    const category = parts[0];
+    const year = parts[1];
+    const color = parts[2];
+    const type = parts.slice(3).join("_");
+
+    if (category !== "birthday") {
+        return null;
+    }
+
+    return { year, color, type };
+}
+
+function sortImages(a, b) {
+    const typePriority = type => {
+        if (type.includes("pose")) return 0;
+        if (type.includes("flat")) return 1;
+        if (type.includes("fold")) return 2;
+        if (type.includes("hang")) return 3;
+        return 9;
+    };
+
+    const aPriority = typePriority(a.type);
+    const bPriority = typePriority(b.type);
+
+    if (aPriority !== bPriority) {
+        return aPriority - bPriority;
+    }
+
+    return a.color.localeCompare(b.color);
+}
+
+function buildTitle({ year, color, type }) {
+    const meta = BIRTHDAY_APPAREL_DATA.yearMeta[year];
+    const baseTitle = meta ? meta.title : `Born ${year}`;
+    return `${baseTitle} ${formatWord(color)} ${formatType(type)} Tee`;
+}
+
+function buildAlt({ year, color, type }) {
+    return `Version birthday shirt for ${year}, ${formatWord(color).toLowerCase()} shirt, ${formatType(type).toLowerCase()} style`;
+}
+
+function formatWord(word) {
+    const map = {
+        dkblue: "Dark Blue",
+        dkgrey: "Dark Grey",
+        ltgrey: "Light Grey",
+        paleblue: "Pale Blue",
+        offwhite: "Off White"
+    };
+
+    if (map[word]) {
+        return map[word];
+    }
+
+    return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+function formatType(type) {
+    const map = {
+        pose: "Pose",
+        flat: "Flat",
+        fold: "Folded",
+        hang: "Hanging"
+    };
+
+    return map[type] || type.charAt(0).toUpperCase() + type.slice(1);
+}
+
+function escapeSingleQuotes(text) {
+    return text.replace(/'/g, "\\'");
+}
+
+function setBirthdayImage(year, imageSrc, title, altText, link, thumb) {
+    const mainImage = document.getElementById(`birthday-${year}-main`);
+    const titleLink = document.getElementById(`birthday-${year}-title`);
+    const mainLink = document.getElementById(`birthday-${year}-link`);
+    const buttonLink = document.getElementById(`birthday-${year}-button`);
+
+    if (mainImage) {
+        mainImage.src = imageSrc;
+        mainImage.alt = altText;
+    }
+
+    if (titleLink) {
+        titleLink.textContent = title;
+        titleLink.href = link;
+    }
+
+    if (mainLink) {
+        mainLink.href = link;
+    }
+
+    if (buttonLink) {
+        buttonLink.href = link;
+    }
+
+    const gallery = thumb.closest(".breed-gallery");
+    if (gallery) {
+        gallery.querySelectorAll(".breed-thumbs img").forEach(img => {
+            img.classList.remove("active-thumb");
+        });
+        thumb.classList.add("active-thumb");
+    }
+}
+
+document.addEventListener("click", function(e) {
+    const link = e.target.closest("a");
+
+    if (!link) return;
+
+    if (link.href && link.href.includes("etsy.com") && typeof gtag === "function") {
+        gtag("event", "etsy_click", {
+            link_url: link.href,
+            page_location: window.location.pathname
+        });
+    }
+});
 </script>
+
+</body>
 </html>
