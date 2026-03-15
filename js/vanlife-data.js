@@ -20,8 +20,12 @@ const VANLIFE_DATA = {
 
     imageFiles: [
         "vanlife_eventually_white_hoodie_pose.webp",
+        "vanlife_eventually_cream_hoodie_flat.webp",
+        
         "vanlife_level_sand_tee_flat.webp",
         "vanlife_level_grey_tee_flat.webp",
+        "vanlife_eventually_grey_hoodie_flat.webp",
+        "vanlife_eventually_grey_hoodie_fold.webp",
         "vanlife_wildbeavers_green_tee_pose.webp",
         "vanlife_schematic_white_mug_flat.webp",
         "vanlife_fruit_grey_tee_pose.webp",
