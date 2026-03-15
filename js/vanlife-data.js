@@ -23,7 +23,10 @@ const VANLIFE_DATA = {
         "vanlife_level_sand_tee_flat.webp",
         "vanlife_wildbeavers_green_tee_pose.webp",
         "vanlife_schematic_white_mug_flat.webp",
+        "vanlife_fruit_grey_tee_pose.webp",
+        "vanlife_fruit_grey_cushion_pose.webp",
         "vanlife_fruit_grey_cushion_flat.webp",
         "vanlife_fruit_grey_tee_flat.webp",
+        "vanlife_fruit_grey_cushion_fold.webp"
     ]
 };
