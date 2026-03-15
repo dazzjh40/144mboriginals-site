@@ -1,159 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Vanlife Apparel | 1.44MB Originals</title>
-
-<meta name="description" content="Vanlife inspired apparel for campervan lovers and road trip adventurers. Funny vanlife shirts and campervan lifestyle designs from 1.44MB Originals.">
-
+<meta name="description" content="Vanlife inspired apparel, mugs and accessories for campervan lovers and road trip adventurers. Funny vanlife gifts and campervan lifestyle designs from 1.44MB Originals.">
 <link rel="stylesheet" href="css/style.css">
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-69V22F8BZN"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-69V22F8BZN');
+</script>
 </head>
-
 <body>
 
 <div class="container">
 
-<img src="logo.png" class="logo">
+    <img src="logo.png" class="logo" alt="1.44MB Originals logo">
 
-<h1>Vanlife Apparel</h1>
+    <h1>Vanlife Apparel</h1>
 
-<div class="tagline">
-Campervan Life • Road Trip Humor • Vanlife Inspired Designs
-</div>
+    <div class="tagline">
+        Campervan Life • Road Trip Humor • Vanlife Inspired Designs
+    </div>
 
-<div id="nav-placeholder"></div>
+    <div id="nav-placeholder"></div>
 
-<div class="section">
+    <div id="vanlife-content"></div>
 
-<h2>Vanlife Designs</h2>
+    <div class="section">
+        <h2>About Our Vanlife Designs</h2>
 
-<div class="products">
+        <p>
+            Vanlife inspired products for campervan adventures, road trips and life on the open road.
+            Browse funny and practical designs for van owners, campers and travellers, including apparel, mugs and home accessories.
+        </p>
 
+        <p>
+            All designs are available through our Etsy store.
+        </p>
+    </div>
 
-<a href="https://www.etsy.com/uk/listing/4434699070/van-life-eventually-hoodie-funny" target="_blank">
-
-<div class="product">
-
-<img src="images/vanlife1.png">
-
-<div class="product-title">
-Van Life... Eventually Hoodie
-</div>
-
-<div class="small-button">
-View on Etsy
-<p class="smalltext">
-Available on Etsy • Secure checkout
-</p> 
-</div>
+    <div class="footer">
+        © 2026 1.44MB Originals
+    </div>
 
 </div>
 
-</a>
+<script src="js/vanlife-data.js"></script>
 
-
-
-<a href="https://www.etsy.com/uk/listing/4467832679/funny-vanlife-t-shirt-vw-camper" target="_blank">
-
-<div class="product">
-
-<img src="images/vanlife6.png">
-
-<div class="product-title">
-Vanlife Level t-shirt
-</div>
-
-<div class="small-button">
-View on Etsy
-<p class="smalltext">
-Available on Etsy • Secure checkout
-</p>
-</div>
-
-</div>
-
-</a>
-
-
-
-<a href="https://www.etsy.com/uk/listing/4461055849/vanlife-wild-beavers-t-shirt-funny" target="_blank">
-
-<div class="product">
-
-<img src="images/vanlife2.png">
-
-<div class="product-title">
-Vanlife Wild Beavers t-shirt
-</div>
-
-<div class="small-button">
-View on Etsy
-<p class="smalltext">
-Available on Etsy • Secure checkout
-</p>
-</div>
-
-</div>
-
-</a>
-
-
-
-<a href="https://www.etsy.com/uk/listing/4467816668/vanlife-vw-technical-schematic-mug" target="_blank">
-
-<div class="product">
-
-<img src="images/vanlife5.png">
-
-<div class="product-title">
-Vanlife VW-technical-schematic mug
-</div>
-
-<div class="small-button">
-View on Etsy
-<p class="smalltext">
-Available on Etsy • Secure checkout
-</p>
-</div>
-
-</div>
-
-</a>
-
-
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>About Our Vanlife Designs</h2>
-
-<p>
-Vanlife apparel inspired by campervan adventures, road trips and the freedom of life on the road.
-Perfect for van owners, campervan travellers and outdoor explorers who dream of the open road.
-</p>
-
-<p>
-All designs are available through our Etsy store.
-</p>
-
-</div>
-
-<div class="footer">
-
-© 2026 1.44MB Originals
-
-</div>
-
-</div>
 <script>
 document.addEventListener("DOMContentLoaded", async () => {
+    await loadNavigation();
+    renderVanlife();
+});
+
+async function loadNavigation() {
     const navPlaceholder = document.getElementById("nav-placeholder");
 
     try {
@@ -165,7 +70,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         navPlaceholder.innerHTML = await response.text();
 
-        const currentPage = location.pathname.split("/").pop() || "index.html";
+        const currentPage = location.pathname.split("/").pop() || "vanlife.html";
 
         document.querySelectorAll(".nav a").forEach(link => {
             if (link.getAttribute("href") === currentPage) {
@@ -186,27 +91,234 @@ document.addEventListener("DOMContentLoaded", async () => {
     } catch (error) {
         console.error("Navigation load error:", error);
     }
-});
-</script>
-</body>
-<script>
-
-document.addEventListener("click", function(e) {
-
-const link = e.target.closest("a");
-
-if(!link) return;
-
-if(link.href && link.href.includes("etsy.com")) {
-
-gtag('event', 'etsy_click', {
-link_url: link.href,
-page_location: window.location.pathname
-});
-
 }
 
-});
+function renderVanlife() {
+    const container = document.getElementById("vanlife-content");
+    const grouped = groupImagesByDesign(VANLIFE_DATA.imageFiles);
 
+    Object.keys(VANLIFE_DATA.designNames).forEach(designKey => {
+        const images = grouped[designKey] || [];
+
+        if (!images.length) {
+            return;
+        }
+
+        images.sort(sortImages);
+
+        const mainImage = images[0];
+        const etsyLink = VANLIFE_DATA.designLinks[designKey] || "#";
+
+        const section = document.createElement("div");
+        section.className = "section";
+
+        section.innerHTML = `
+            <h2>${VANLIFE_DATA.designNames[designKey]}</h2>
+
+            <div class="breed-gallery">
+                <div class="breed-main">
+                    <a id="${designKey}-link" href="${etsyLink}" target="_blank" rel="noopener noreferrer">
+                        <img id="${designKey}-main" src="${mainImage.src}" alt="${mainImage.alt}" loading="lazy">
+                    </a>
+
+                    <div class="product-title">
+                        <a id="${designKey}-title" href="${etsyLink}" target="_blank" rel="noopener noreferrer">
+                            ${mainImage.title}
+                        </a>
+                    </div>
+
+                    <a class="small-button" id="${designKey}-button" href="${etsyLink}" target="_blank" rel="noopener noreferrer">
+                        View on Etsy
+                    </a>
+
+                    <p class="smalltext">Available on Etsy • Secure checkout</p>
+                </div>
+
+                <div class="breed-thumbs">
+                    ${images.map((img, index) => `
+                        <img
+                            src="${img.src}"
+                            alt="${img.alt}"
+                            class="${index === 0 ? "active-thumb" : ""}"
+                            onclick="setVanlifeImage('${designKey}', '${img.src}', '${escapeSingleQuotes(img.title)}', '${escapeSingleQuotes(img.alt)}', '${etsyLink}', this)"
+                        >
+                    `).join("")}
+                </div>
+            </div>
+        `;
+
+        container.appendChild(section);
+    });
+}
+
+function groupImagesByDesign(files) {
+    const grouped = {};
+
+    files.forEach(filename => {
+        const parsed = parseFilename(filename);
+        if (!parsed) return;
+
+        if (!grouped[parsed.design]) {
+            grouped[parsed.design] = [];
+        }
+
+        grouped[parsed.design].push({
+            filename,
+            src: `images/small_img/vanlife/${filename}`,
+            design: parsed.design,
+            colour: parsed.colour,
+            product: parsed.product,
+            view: parsed.view,
+            title: buildTitle(parsed),
+            alt: buildAlt(parsed)
+        });
+    });
+
+    return grouped;
+}
+
+function parseFilename(filename) {
+    const clean = filename.replace(".webp", "");
+    const parts = clean.split("_");
+
+    if (parts.length < 5) {
+        return null;
+    }
+
+    const category = parts[0];
+    const design = parts[1];
+    const colour = parts[2];
+    const product = parts[3];
+    const view = parts.slice(4).join("_");
+
+    if (category !== "vanlife") {
+        return null;
+    }
+
+    return { design, colour, product, view };
+}
+
+function sortImages(a, b) {
+    const viewPriority = view => {
+        if (view.includes("pose")) return 0;
+        if (view.includes("flat")) return 1;
+        if (view.includes("fold")) return 2;
+        if (view.includes("hang")) return 3;
+        return 9;
+    };
+
+    const aPriority = viewPriority(a.view);
+    const bPriority = viewPriority(b.view);
+
+    if (aPriority !== bPriority) {
+        return aPriority - bPriority;
+    }
+
+    return a.product.localeCompare(b.product);
+}
+
+function buildTitle({ design, colour, product, view }) {
+    return `${formatDesignName(design)} ${formatWord(colour)} ${formatProduct(product)} ${formatView(view)}`;
+}
+
+function buildAlt({ design, colour, product, view }) {
+    return `${formatDesignName(design)} design on ${formatWord(colour).toLowerCase()} ${formatProduct(product).toLowerCase()}, ${formatView(view).toLowerCase()} view`;
+}
+
+function formatDesignName(design) {
+    return VANLIFE_DATA.designNames[design] || design;
+}
+
+function formatWord(word) {
+    const map = {
+        dkblue: "Dark Blue",
+        dkgrey: "Dark Grey",
+        ltgrey: "Light Grey",
+        offwhite: "Off White",
+        paleblue: "Pale Blue"
+    };
+
+    if (map[word]) {
+        return map[word];
+    }
+
+    return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+function formatProduct(product) {
+    const map = {
+        tee: "T Shirt",
+        tshirt: "T Shirt",
+        hoodie: "Hoodie",
+        mug: "Mug",
+        cushion: "Cushion",
+        drinkware: "Drinkware"
+    };
+
+    return map[product] || product.charAt(0).toUpperCase() + product.slice(1);
+}
+
+function formatView(view) {
+    const map = {
+        pose: "Pose",
+        flat: "Flat",
+        fold: "Folded",
+        hang: "Hanging"
+    };
+
+    return map[view] || view.charAt(0).toUpperCase() + view.slice(1);
+}
+
+function escapeSingleQuotes(text) {
+    return text.replace(/'/g, "\\'");
+}
+
+function setVanlifeImage(design, imageSrc, title, altText, link, thumb) {
+    const mainImage = document.getElementById(`${design}-main`);
+    const titleLink = document.getElementById(`${design}-title`);
+    const mainLink = document.getElementById(`${design}-link`);
+    const buttonLink = document.getElementById(`${design}-button`);
+
+    if (mainImage) {
+        mainImage.src = imageSrc;
+        mainImage.alt = altText;
+    }
+
+    if (titleLink) {
+        titleLink.textContent = title;
+        titleLink.href = link;
+    }
+
+    if (mainLink) {
+        mainLink.href = link;
+    }
+
+    if (buttonLink) {
+        buttonLink.href = link;
+    }
+
+    const gallery = thumb.closest(".breed-gallery");
+    if (gallery) {
+        gallery.querySelectorAll(".breed-thumbs img").forEach(img => {
+            img.classList.remove("active-thumb");
+        });
+        thumb.classList.add("active-thumb");
+    }
+}
+
+document.addEventListener("click", function(e) {
+    const link = e.target.closest("a");
+
+    if (!link) return;
+
+    if (link.href && link.href.includes("etsy.com") && typeof gtag === "function") {
+        gtag("event", "etsy_click", {
+            link_url: link.href,
+            page_location: window.location.pathname
+        });
+    }
+});
 </script>
+
+</body>
 </html>
