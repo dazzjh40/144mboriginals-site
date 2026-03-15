@@ -1,0 +1,25 @@
+Format the images in this method That structure is better than vanlife1.webp style names because it lets the script understand:
+
+which design it is
+
+colour
+
+product type
+
+image style
+
+It also scales properly later.
+
+Suggested mapping for your current files
+
+From what you described, I would rename the current ones like this:
+
+vanlife1.png → vanlife_eventually_white_hoodie_pose.webp
+
+vanlife2.png → vanlife_wildbeavers_green_tee_pose.webp
+
+vanlife3.png → vanlife_unknown_colour_item_flat.webp
+
+vanlife5.png → vanlife_schematic_white_mug_flat.webp
+
+vanlife6.png → vanlife_level_sand_tee_flat.webp
