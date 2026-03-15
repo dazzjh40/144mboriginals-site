@@ -26,7 +26,7 @@ const BIRTHDAY_APPAREL_DATA = {
         "birthday_1984_dkblue_flat.webp",
         "birthday_1984_paleblue_flat.webp",
         "birthday_1994_dkblue_fold.webp",
-        "birthday_1994_green_flat.webp",
+        "birthday_1994_dkgreen_flat.webp",
         "birthday_1995_yellow_flat.webp",
         "birthday_1996_ltgrey_flat.webp"
     ]
