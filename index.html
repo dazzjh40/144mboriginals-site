@@ -16,15 +16,15 @@
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="css/style.css">
-<!-- Google tag (gtag.js) -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-69V22F8BZN"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-69V22F8BZN');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-69V22F8BZN');
 </script>
+
 </head>
 
 <body>
@@ -72,31 +72,21 @@ inspired by vintage tech and geek culture.
 <div class="products">
 
 <a href="products.html">
-
 <div class="product">
-
 <img src="images/floppy144.png">
-
 <div class="product-title">
 1.44MB Originals Logo Shirt
 </div>
-
 </div>
-
 </a>
 
 <a href="birthday.html">
-
 <div class="product">
-
 <img src="images/version1976.png">
-
 <div class="product-title">
 Version Birthday Shirts
 </div>
-
 </div>
-
 </a>
 
 </div>
@@ -110,59 +100,39 @@ Version Birthday Shirts
 <div class="products">
 
 <a href="products.html">
-
 <div class="product">
-
 <img src="images/floppydisk3.png">
-
 <div class="product-title">
 Retro Tech Humor
 </div>
-
 </div>
-
 </a>
 
 <a href="birthday.html">
-
 <div class="product">
-
 <img src="images/version40banner.png">
-
 <div class="product-title">
 Birthday Version Series
 </div>
-
 </div>
-
 </a>
 
 <a href="vanlife.html">
-
 <div class="product">
-
 <img src="images/vanlife1.png">
-
 <div class="product-title">
 Vanlife Apparel
 </div>
-
 </div>
-
 </a>
 
 <a href="fishing.html">
-
 <div class="product">
-
 <img src="images/fishing1.png">
-
 <div class="product-title">
 Fishing Shirts
 </div>
-
 </div>
-
 </a>
 
 </div>
@@ -170,63 +140,14 @@ Fishing Shirts
 </div>
 
 <div class="footer">
-
 © 2026 1.44MB Originals
-
 </div>
 
 </div>
-<script>
 
-const currentPage = location.pathname.split("/").pop();
-
-document.querySelectorAll(".nav a").forEach(link => {
-    if(link.getAttribute("href") === currentPage){
-        link.classList.add("active");
-    }
-});
-
-</script>
- <script>
-document.addEventListener("DOMContentLoaded", async () => {
-    const navPlaceholder = document.getElementById("nav-placeholder");
-
-    try {
-        const response = await fetch("nav.html");
-
-        if (!response.ok) {
-            throw new Error(`Failed to load nav.html: ${response.status}`);
-        }
-
-        navPlaceholder.innerHTML = await response.text();
-
-        const currentPage = location.pathname.split("/").pop() || "index.html";
-
-        document.querySelectorAll(".nav a").forEach(link => {
-            if (link.getAttribute("href") === currentPage) {
-                link.classList.add("active");
-            }
-        });
-
-        const navToggle = document.getElementById("nav-toggle");
-        const siteNav = document.getElementById("site-nav");
-
-        if (navToggle && siteNav) {
-            navToggle.addEventListener("click", () => {
-                const isOpen = siteNav.classList.toggle("nav-open");
-                navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-            });
-        }
-
-    } catch (error) {
-        console.error("Navigation load error:", error);
-    }
-});
-</script>
-</body>
+<script src="js/site-nav.js" defer></script>
 
 <script>
-
 document.addEventListener("click", function(e) {
 
 const link = e.target.closest("a");
@@ -234,29 +155,14 @@ const link = e.target.closest("a");
 if(!link) return;
 
 if(link.href && link.href.includes("etsy.com")) {
-
 gtag('event', 'etsy_click', {
 link_url: link.href,
 page_location: window.location.pathname
 });
-
 }
 
 });
-
 </script>
+
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
