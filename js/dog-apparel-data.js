@@ -6,7 +6,8 @@ const DOG_APPAREL_DATA = {
         frenchbd: "https://www.etsy.com/uk/listing/4470280188/french-bulldog-mom-shirt-frenchie-dog",
         boxer: "https://www.etsy.com/uk/listing/4470283569/boxer-dog-mom-shirt-boxer-mom-gift-cute",
         chihuahua: "https://www.etsy.com/uk/listing/4470416074/chihuahua-mom-shirt-chihuahua-dog-mom",
-        goldenretriever: "https://www.etsy.com/uk/listing/4470246955/golden-retriever-mom-shirt-dog-mom-gift"
+        goldenretriever: "https://www.etsy.com/uk/listing/4470246955/golden-retriever-mom-shirt-dog-mom-gift",
+        bullmastiff: "https://www.etsy.com/uk/listing/4472828781/bullmastiff-mom-shirt-bullmastiff-t"
 
     },
 
@@ -17,7 +18,8 @@ const DOG_APPAREL_DATA = {
         frenchbd: "French Bulldog",
         boxer: "Boxer",
         chihuahua: "Chihuahua",
-        goldenretriever: "Golden Retriever"
+        goldenretriever: "Golden Retriever",
+        bullmastiff: "Bullmastiff"
 
     },
 
@@ -55,7 +57,11 @@ const DOG_APPAREL_DATA = {
     "labrador_grey_fold.webp",
     "labrador_offwhite_fold.webp",
     "labrador_purple_flat.webp",
-    "labrador_white_pose.webp"
+    "labrador_white_pose.webp",
+    "bullmastiff_cream_flat.webp",
+    "bullmastiff_black_flat.webp",
+    "bullmastiff_grey_fold.webp"
+    
 ]
 
 };
