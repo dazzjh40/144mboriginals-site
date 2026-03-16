@@ -13,8 +13,12 @@ const FISHING_DATA = {
 
     imageFiles: [
         "fishing_trouble_grey_sweatshirt_pose.webp",
+        "fishing_trouble_white_sweatshirt_flat.webp",
+        "fishing_trouble_beige_sweatshirt_flat.webp",
         "fishing_upatthecrack_white_tee_pose.webp",
         "fishing_trouble_white_mug_flat.webp",
-        "fishing_size_black_sweatshirt_pose.webp"
+        "fishing_trouble_white_drinkcup_flat.webp",
+        "vanlife_eventually_grey_hoodie_flat.webp",
+         "fishing_size_black_sweatshirt_pose.webp"
     ]
 };
