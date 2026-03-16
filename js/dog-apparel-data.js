@@ -58,6 +58,7 @@ const DOG_APPAREL_DATA = {
     "labrador_offwhite_fold.webp",
     "labrador_purple_flat.webp",
     "labrador_white_pose.webp",
+       
     "bullmastiff_cream_flat.webp",
     "bullmastiff_black_flat.webp",
     "bullmastiff_grey_fold.webp"
