@@ -3,8 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><title>Retro Version Birthday Shirts | 1.44MB Originals</title></title>
+
+<title>Retro Version Birthday Shirts | 1.44MB Originals</title>
+
 <meta name="description" content="Retro software version birthday shirts inspired by classic computing culture. Funny geek gifts for developers, programmers and tech enthusiasts.">
+
+<link rel="stylesheet" href="css/style.css">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-69V22F8BZN"></script>
 <script>
@@ -14,85 +18,52 @@ gtag('js', new Date());
 gtag('config', 'G-69V22F8BZN');
 </script>
 </head>
+
 <body>
 
 <div class="container">
+
 <div class="breadcrumb">
   <a href="retro-tech.html">Retro Tech Apparel</a> / Birthday Shirts
 </div>
-    <img src="logo.png" class="logo" alt="1.44MB Originals logo">
 
-    <h1><h1>Retro Software Version Birthday Shirts</h1></h1>
+<img src="logo.png" class="logo" alt="1.44MB Originals logo">
 
-    <div class="tagline">
-        Because humans also ship stable releases.
-    </div>
+<h1>Retro Software Version Birthday Shirts</h1>
 
-    <div id="nav-placeholder"></div>
+<div class="tagline">
+    Because humans also ship stable releases.
+</div>
 
-    <div id="birthday-apparel-content"></div>
+<div id="nav-placeholder"></div>
 
-    <div class="section">
-        <h2>About Our Birthday Shirts</h2>
+<div id="birthday-apparel-content"></div>
 
-        <p>
-            Funny version birthday shirts inspired by retro software releases, coding culture and geek humour.
-            A great gift idea for developers, programmers, tech workers and anyone who appreciates a stable build joke.
-        </p>
+<div class="section">
+    <h2>About Our Birthday Shirts</h2>
 
-        <p>
-            All designs are available through our Etsy store.
-        </p>
-    </div>
+    <p>
+        Funny version birthday shirts inspired by retro software releases, coding culture and geek humour.
+        A great gift idea for developers, programmers, tech workers and anyone who appreciates a stable build joke.
+    </p>
 
-    <div class="footer">
-        © 2026 1.44MB Originals
-    </div>
+    <p>
+        All designs are available through our Etsy store.
+    </p>
+</div>
+
+<div class="footer">
+    © 2026 1.44MB Originals
+</div>
 
 </div>
 
 <script src="js/birthday-apparel-data.js"></script>
 
 <script>
-document.addEventListener("DOMContentLoaded", async () => {
-    await loadNavigation();
+document.addEventListener("DOMContentLoaded", () => {
     renderBirthdayApparel();
 });
-
-async function loadNavigation() {
-    const navPlaceholder = document.getElementById("nav-placeholder");
-
-    try {
-        const response = await fetch("nav.html");
-
-        if (!response.ok) {
-            throw new Error(`Failed to load nav.html: ${response.status}`);
-        }
-
-        navPlaceholder.innerHTML = await response.text();
-
-        const currentPage = location.pathname.split("/").pop() || "birthday.html";
-
-        document.querySelectorAll(".nav a").forEach(link => {
-            if (link.getAttribute("href") === currentPage) {
-                link.classList.add("active");
-            }
-        });
-
-        const navToggle = document.getElementById("nav-toggle");
-        const siteNav = document.getElementById("site-nav");
-
-        if (navToggle && siteNav) {
-            navToggle.addEventListener("click", () => {
-                const isOpen = siteNav.classList.toggle("nav-open");
-                navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-            });
-        }
-
-    } catch (error) {
-        console.error("Navigation load error:", error);
-    }
-}
 
 function renderBirthdayApparel() {
     const container = document.getElementById("birthday-apparel-content");
@@ -103,9 +74,7 @@ function renderBirthdayApparel() {
         .forEach(yearKey => {
             const images = grouped[yearKey] || [];
 
-            if (!images.length) {
-                return;
-            }
+            if (!images.length) return;
 
             images.sort(sortImages);
 
@@ -184,18 +153,14 @@ function parseFilename(filename) {
     const clean = filename.replace(".webp", "");
     const parts = clean.split("_");
 
-    if (parts.length < 4) {
-        return null;
-    }
+    if (parts.length < 4) return null;
 
     const category = parts[0];
     const year = parts[1];
     const color = parts[2];
     const type = parts.slice(3).join("_");
 
-    if (category !== "birthday") {
-        return null;
-    }
+    if (category !== "birthday") return null;
 
     return { year, color, type };
 }
@@ -212,9 +177,7 @@ function sortImages(a, b) {
     const aPriority = typePriority(a.type);
     const bPriority = typePriority(b.type);
 
-    if (aPriority !== bPriority) {
-        return aPriority - bPriority;
-    }
+    if (aPriority !== bPriority) return aPriority - bPriority;
 
     return a.color.localeCompare(b.color);
 }
@@ -238,11 +201,7 @@ function formatWord(word) {
         offwhite: "Off White"
     };
 
-    if (map[word]) {
-        return map[word];
-    }
-
-    return word.charAt(0).toUpperCase() + word.slice(1);
+    return map[word] || word.charAt(0).toUpperCase() + word.slice(1);
 }
 
 function formatType(type) {
@@ -276,13 +235,8 @@ function setBirthdayImage(year, imageSrc, title, altText, link, thumb) {
         titleLink.href = link;
     }
 
-    if (mainLink) {
-        mainLink.href = link;
-    }
-
-    if (buttonLink) {
-        buttonLink.href = link;
-    }
+    if (mainLink) mainLink.href = link;
+    if (buttonLink) buttonLink.href = link;
 
     const gallery = thumb.closest(".breed-gallery");
     if (gallery) {
@@ -292,10 +246,13 @@ function setBirthdayImage(year, imageSrc, title, altText, link, thumb) {
         thumb.classList.add("active-thumb");
     }
 }
+</script>
 
+<script src="js/site-nav.js"></script>
+
+<script>
 document.addEventListener("click", function(e) {
     const link = e.target.closest("a");
-
     if (!link) return;
 
     if (link.href && link.href.includes("etsy.com") && typeof gtag === "function") {
