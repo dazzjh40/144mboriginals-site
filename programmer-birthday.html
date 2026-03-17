@@ -1,110 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Programmer Birthday Shirt | Software Version Birthday Gifts</title>
-
-<meta name="description" content="Funny programmer birthday shirts based on software version numbers. Perfect birthday gifts for developers, coders and tech enthusiasts.">
-
-<link rel="stylesheet" href="css/style.css">
-
+<meta http-equiv="refresh" content="0; url=birthday.html">
+<link rel="canonical" href="birthday.html">
+<title>Redirecting...</title>
 </head>
-
 <body>
-
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="products.html">Products</a>
-<a href="originals.html">1.44MB Originals</a>
-<a href="birthday.html">Birthday Shirts</a>
-<a href="version.html">Find Your Version</a>
-<a href="https://www.etsy.com/shop/HandyEnough" target="_blank">Etsy Store</a>
-</div>
-
-<div class="container">
-
-<h1>Programmer Birthday Shirts</h1>
-
-<p>
-Looking for a unique birthday gift for a programmer or developer?
-Our software version birthday shirts turn age into a software release.
-Perfect for coders, developers and tech enthusiasts.
-</p>
-
-<h2>Find Your Software Version</h2>
-
-<p>
-Every developer has a version number.  
-Enter your birth year to discover your software version.
-</p>
-
-<a href="version.html" class="big-button">
-Check Your Version
-</a>
-
-<h2>Popular Programmer Birthday Versions</h2>
-
-<ul>
-
-<li><a href="version.html?year=1976">Version 5.0 – Born 1976</a></li>
-<li><a href="version.html?year=1984">Version 4.0 – Born 1984</a></li>
-<li><a href="version.html?year=1989">Version 3.5 – Born 1989</a></li>
-<li><a href="version.html?year=1994">Version 3.0 – Born 1994</a></li>
-
-</ul>
-
-<h2>Why Programmers Love These Shirts</h2>
-
-<p>
-These retro computing birthday shirts are inspired by classic software version naming.
-They make great gifts for programmers, software engineers, developers and anyone who enjoys geek humor.
-</p>
-
-<a href="https://www.etsy.com/shop/HandyEnough" target="_blank" class="big-button">
-Browse All Shirts
-</a>
-
-</div>
-<script>
-document.addEventListener("DOMContentLoaded", async () => {
-    const navPlaceholder = document.getElementById("nav-placeholder");
-
-    try {
-        const response = await fetch("nav.html");
-
-        if (!response.ok) {
-            throw new Error(`Failed to load nav.html: ${response.status}`);
-        }
-
-        navPlaceholder.innerHTML = await response.text();
-
-        const currentPage = location.pathname.split("/").pop() || "index.html";
-
-        document.querySelectorAll(".nav a").forEach(link => {
-            if (link.getAttribute("href") === currentPage) {
-                link.classList.add("active");
-            }
-        });
-
-        const navToggle = document.getElementById("nav-toggle");
-        const siteNav = document.getElementById("site-nav");
-
-        if (navToggle && siteNav) {
-            navToggle.addEventListener("click", () => {
-                const isOpen = siteNav.classList.toggle("nav-open");
-                navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-            });
-        }
-
-    } catch (error) {
-        console.error("Navigation load error:", error);
-    }
-});
-</script>
+<p>Redirecting...</p>
 </body>
-
 </html>
