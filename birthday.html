@@ -6,7 +6,7 @@
 
 <title>Retro Version Birthday Shirts | 1.44MB Originals</title>
 
-<meta name="description" content="Retro software version birthday shirts inspired by classic computing culture. Funny geek gifts for developers, programmers and tech enthusiasts.">
+<meta name="description" content="Turn your birth year into a software version. Retro tech birthday shirts inspired by classic computing culture. Perfect geek gifts for developers and tech enthusiasts.">
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -29,27 +29,65 @@ gtag('config', 'G-69V22F8BZN');
 
 <img src="logo.png" class="logo" alt="1.44MB Originals logo">
 
-<h1>Retro Software Version Birthday Shirts</h1>
+<h1>What Version Are You Running?</h1>
 
 <div class="tagline">
-    Because humans also ship stable releases.
+Turn your birth year into a software release.
 </div>
 
 <div id="nav-placeholder"></div>
 
-<div id="birthday-apparel-content"></div>
+<!-- HERO EXPLANATION -->
 
 <div class="section">
-    <h2>About Our Birthday Shirts</h2>
+
+<p>
+If you were born in 1989, that makes you Version 3.5.<br>
+Stable. Reliable. Occasionally unpredictable.
+</p>
+
+<p class="smalltext">
+A unique geek gift that only the right people will understand.
+</p>
+
+</div>
+
+<!-- MAIN RENDERED CONTENT -->
+
+<div id="birthday-apparel-content"></div>
+
+<!-- TRUST / CONTEXT -->
+
+<div class="section">
+    <h2>Why These Work</h2>
 
     <p>
-        Funny version birthday shirts inspired by retro software releases, coding culture and geek humour.
-        A great gift idea for developers, programmers, tech workers and anyone who appreciates a stable build joke.
+        Inspired by real software versioning, these designs turn your birth year into something instantly recognisable to developers and tech professionals.
     </p>
 
-    <p>
-        All designs are available through our Etsy store.
+    <p class="smalltext">
+        Perfect for birthdays, team gifts and anyone who appreciates a stable build joke.
     </p>
+</div>
+
+<!-- FINAL CTA -->
+
+<div class="section">
+
+<h2>Explore More Designs</h2>
+
+<p>
+Each version includes multiple colours and styles available on Etsy.
+</p>
+
+<a href="https://www.etsy.com/shop/HandyEnough" target="_blank" class="big-button">
+Browse Full Collection on Etsy
+</a>
+
+<p class="smalltext">
+Secure checkout • More styles available • Worldwide shipping
+</p>
+
 </div>
 
 <div class="footer">
@@ -64,188 +102,6 @@ gtag('config', 'G-69V22F8BZN');
 document.addEventListener("DOMContentLoaded", () => {
     renderBirthdayApparel();
 });
-
-function renderBirthdayApparel() {
-    const container = document.getElementById("birthday-apparel-content");
-    const grouped = groupImagesByYear(BIRTHDAY_APPAREL_DATA.imageFiles);
-
-    Object.keys(BIRTHDAY_APPAREL_DATA.yearMeta)
-        .sort((a, b) => Number(a) - Number(b))
-        .forEach(yearKey => {
-            const images = grouped[yearKey] || [];
-
-            if (!images.length) return;
-
-            images.sort(sortImages);
-
-            const mainImage = images[0];
-            const etsyLink = BIRTHDAY_APPAREL_DATA.yearLinks[yearKey] || "#";
-            const heading = BIRTHDAY_APPAREL_DATA.yearMeta[yearKey].title;
-
-            const section = document.createElement("div");
-            section.className = "section";
-
-            section.innerHTML = `
-                <h2>${heading}</h2>
-
-                <div class="breed-gallery">
-                    <div class="breed-main">
-                        <a id="birthday-${yearKey}-link" href="${etsyLink}" target="_blank" rel="noopener noreferrer">
-                            <img id="birthday-${yearKey}-main" src="${mainImage.src}" alt="${mainImage.alt}" loading="lazy">
-                        </a>
-
-                        <div class="product-title">
-                            <a id="birthday-${yearKey}-title" href="${etsyLink}" target="_blank" rel="noopener noreferrer">
-                                ${mainImage.title}
-                            </a>
-                        </div>
-
-                        <a class="small-button" id="birthday-${yearKey}-button" href="${etsyLink}" target="_blank" rel="noopener noreferrer">
-                            View on Etsy
-                        </a>
-
-                        <p class="smalltext">Available on Etsy • Secure checkout</p>
-                    </div>
-
-                    <div class="breed-thumbs">
-                        ${images.map((img, index) => `
-                            <img
-                                src="${img.src}"
-                                alt="${img.alt}"
-                                class="${index === 0 ? "active-thumb" : ""}"
-                                onclick="setBirthdayImage('${yearKey}', '${img.src}', '${escapeSingleQuotes(img.title)}', '${escapeSingleQuotes(img.alt)}', '${etsyLink}', this)"
-                            >
-                        `).join("")}
-                    </div>
-                </div>
-            `;
-
-            container.appendChild(section);
-        });
-}
-
-function groupImagesByYear(files) {
-    const grouped = {};
-
-    files.forEach(filename => {
-        const parsed = parseFilename(filename);
-        if (!parsed) return;
-
-        if (!grouped[parsed.year]) {
-            grouped[parsed.year] = [];
-        }
-
-        grouped[parsed.year].push({
-            filename,
-            src: `images/small_img/birthday/${filename}`,
-            year: parsed.year,
-            color: parsed.color,
-            type: parsed.type,
-            title: buildTitle(parsed),
-            alt: buildAlt(parsed)
-        });
-    });
-
-    return grouped;
-}
-
-function parseFilename(filename) {
-    const clean = filename.replace(".webp", "");
-    const parts = clean.split("_");
-
-    if (parts.length < 4) return null;
-
-    const category = parts[0];
-    const year = parts[1];
-    const color = parts[2];
-    const type = parts.slice(3).join("_");
-
-    if (category !== "birthday") return null;
-
-    return { year, color, type };
-}
-
-function sortImages(a, b) {
-    const typePriority = type => {
-        if (type.includes("pose")) return 0;
-        if (type.includes("flat")) return 1;
-        if (type.includes("fold")) return 2;
-        if (type.includes("hang")) return 3;
-        return 9;
-    };
-
-    const aPriority = typePriority(a.type);
-    const bPriority = typePriority(b.type);
-
-    if (aPriority !== bPriority) return aPriority - bPriority;
-
-    return a.color.localeCompare(b.color);
-}
-
-function buildTitle({ year, color, type }) {
-    const meta = BIRTHDAY_APPAREL_DATA.yearMeta[year];
-    const baseTitle = meta ? meta.title : `Born ${year}`;
-    return `${baseTitle} ${formatWord(color)} ${formatType(type)} Tee`;
-}
-
-function buildAlt({ year, color, type }) {
-    return `Version birthday shirt for ${year}, ${formatWord(color).toLowerCase()} shirt, ${formatType(type).toLowerCase()} style`;
-}
-
-function formatWord(word) {
-    const map = {
-        dkblue: "Dark Blue",
-        dkgrey: "Dark Grey",
-        ltgrey: "Light Grey",
-        paleblue: "Pale Blue",
-        offwhite: "Off White"
-    };
-
-    return map[word] || word.charAt(0).toUpperCase() + word.slice(1);
-}
-
-function formatType(type) {
-    const map = {
-        pose: "Pose",
-        flat: "Flat",
-        fold: "Folded",
-        hang: "Hanging"
-    };
-
-    return map[type] || type.charAt(0).toUpperCase() + type.slice(1);
-}
-
-function escapeSingleQuotes(text) {
-    return text.replace(/'/g, "\\'");
-}
-
-function setBirthdayImage(year, imageSrc, title, altText, link, thumb) {
-    const mainImage = document.getElementById(`birthday-${year}-main`);
-    const titleLink = document.getElementById(`birthday-${year}-title`);
-    const mainLink = document.getElementById(`birthday-${year}-link`);
-    const buttonLink = document.getElementById(`birthday-${year}-button`);
-
-    if (mainImage) {
-        mainImage.src = imageSrc;
-        mainImage.alt = altText;
-    }
-
-    if (titleLink) {
-        titleLink.textContent = title;
-        titleLink.href = link;
-    }
-
-    if (mainLink) mainLink.href = link;
-    if (buttonLink) buttonLink.href = link;
-
-    const gallery = thumb.closest(".breed-gallery");
-    if (gallery) {
-        gallery.querySelectorAll(".breed-thumbs img").forEach(img => {
-            img.classList.remove("active-thumb");
-        });
-        thumb.classList.add("active-thumb");
-    }
-}
 </script>
 
 <script src="js/site-nav.js"></script>
