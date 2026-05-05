@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.querySelectorAll(".nav a").forEach(link => {
             if (link.getAttribute("href") === currentPage) {
                 link.classList.add("active");
+                link.setAttribute("aria-current", "page");
             }
         });
 
@@ -27,8 +28,14 @@ document.addEventListener("DOMContentLoaded", async () => {
                 const isOpen = siteNav.classList.toggle("nav-open");
                 navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
             });
-        }
 
+            siteNav.addEventListener("click", event => {
+                if (event.target.closest("a")) {
+                    siteNav.classList.remove("nav-open");
+                    navToggle.setAttribute("aria-expanded", "false");
+                }
+            });
+        }
     } catch (error) {
         console.error("Navigation load error:", error);
     }
