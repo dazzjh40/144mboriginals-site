@@ -1737,6 +1737,12 @@ align-items:center;
 gap:14px;
 }
 
+.form-actions .big-button:disabled{
+opacity:0.68;
+cursor:not-allowed;
+transform:none;
+}
+
 .form-actions .smalltext{
 margin:0;
 max-width:520px;

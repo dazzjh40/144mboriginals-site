@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("bespoke-request-form");
     const status = document.getElementById("bespoke-form-status");
+    const submitButton = form ? form.querySelector('button[type="submit"]') : null;
 
     if (!form || !status) return;
 
@@ -13,14 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", async event => {
         const action = form.getAttribute("action") || "";
 
-        if (action.includes("YOUR_FORM_ID")) {
-            event.preventDefault();
-            setStatus("Formspree setup needed: replace YOUR_FORM_ID in bespoke.html with your Formspree form ID.", "is-error");
+        event.preventDefault();
+
+        if (!action.startsWith("https://formspree.io/f/") || action.includes("YOUR_FORM_ID")) {
+            setStatus("Form setup needs checking before this request can be sent.", "is-error");
             return;
         }
 
-        event.preventDefault();
         setStatus("Sending your request...", "");
+        if (submitButton) submitButton.disabled = true;
 
         try {
             const response = await fetch(action, {
@@ -30,9 +32,19 @@ document.addEventListener("DOMContentLoaded", () => {
                     Accept: "application/json"
                 }
             });
+            let result = null;
+
+            try {
+                result = await response.json();
+            } catch (error) {
+                result = null;
+            }
 
             if (!response.ok) {
-                throw new Error("Form submission failed");
+                const formspreeErrors = Array.isArray(result && result.errors)
+                    ? result.errors.map(error => error.message).filter(Boolean).join(" ")
+                    : "";
+                throw new Error(formspreeErrors || "Form submission failed");
             }
 
             form.reset();
@@ -43,8 +55,15 @@ document.addEventListener("DOMContentLoaded", () => {
                     page_location: window.location.pathname
                 });
             }
+
+            window.location.assign(form.dataset.thankYouUrl || "thank-you.html");
         } catch (error) {
-            setStatus("Sorry, the form could not be sent. Please try again or email hello@144mboriginals.com.", "is-error");
+            const message = error && error.message && error.message !== "Form submission failed"
+                ? error.message
+                : "Sorry, the form could not be sent. Please try again or email contact@144mboriginals.com.";
+            setStatus(message, "is-error");
+        } finally {
+            if (submitButton) submitButton.disabled = false;
         }
     });
 });
