@@ -39,7 +39,7 @@ Custom tees, hoodies, mugs, notebooks and gift ideas from 1.44MB Originals.
 Send the rough idea, the product you want, and any wording or visual direction. I can check whether it suits print-on-demand fulfilment and help turn it into a practical product request.
 </p>
 <div class="hero-actions">
-<a href="mailto:hello@144mboriginals.com?subject=Bespoke%201.44MB%20Originals%20request&body=Hi%201.44MB%20Originals,%0D%0A%0D%0AI%20would%20like%20help%20with%20a%20bespoke%20print%20idea.%0D%0A%0D%0AProduct:%0D%0ATheme%20or%20wording:%0D%0AColours:%0D%0ASizes%20or%20quantity:%0D%0ADeadline:%0D%0AIs%20this%20a%20one-off%20gift%20or%20repeat%20order?:%0D%0A%0D%0AThanks" class="big-button">Email a Bespoke Request</a>
+<a href="#bespoke-form" class="big-button">Start the Request Form</a>
 <a href="products.html" class="button button-secondary">Browse Examples</a>
 </div>
 </div>
@@ -85,7 +85,7 @@ Send the rough idea, the product you want, and any wording or visual direction. 
 </div>
 
 <aside class="request-card">
-<h3>Include this in your email</h3>
+<h3>Include this in your request</h3>
 <ul>
 <li>Product: tee, hoodie, mug, notebook, tote or other gift.</li>
 <li>Wording, name, date, year, hobby or theme.</li>
@@ -95,6 +95,88 @@ Send the rough idea, the product you want, and any wording or visual direction. 
 </ul>
 <p class="smalltext">Please avoid copyrighted logos, trademarks or artwork you do not have permission to use.</p>
 </aside>
+</section>
+
+<section class="section bespoke-form-section" id="bespoke-form">
+<div class="section-heading">
+<p class="eyebrow">Request form</p>
+<h2>Tell me what you would like made.</h2>
+<p>Share the basics below. I will reply to confirm whether the idea is suitable for print-on-demand and what the next step would be.</p>
+</div>
+
+<form class="bespoke-form" id="bespoke-request-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<input type="hidden" name="_subject" value="New bespoke request from 1.44MB Originals">
+<input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off">
+
+<div class="form-grid">
+<label>
+<span>Name *</span>
+<input type="text" name="name" required autocomplete="name">
+</label>
+
+<label>
+<span>Email *</span>
+<input type="email" name="email" required autocomplete="email">
+</label>
+
+<label>
+<span>Telephone <em>optional</em></span>
+<input type="tel" name="telephone" autocomplete="tel">
+</label>
+
+<label>
+<span>Product type *</span>
+<select name="product_type" required>
+<option value="">Choose one</option>
+<option>T-shirt</option>
+<option>Hoodie or sweatshirt</option>
+<option>Mug or drinkware</option>
+<option>Notebook or journal</option>
+<option>Tote or bag</option>
+<option>Other gift item</option>
+</select>
+</label>
+
+<label>
+<span>Estimated quantity *</span>
+<select name="quantity" required>
+<option value="">Choose one</option>
+<option>1 item</option>
+<option>2-5 items</option>
+<option>6-10 items</option>
+<option>11-25 items</option>
+<option>More than 25 items</option>
+</select>
+</label>
+
+<label>
+<span>Deadline</span>
+<input type="text" name="deadline" placeholder="e.g. birthday on 20 June">
+</label>
+</div>
+
+<label class="form-full">
+<span>Design idea *</span>
+<textarea name="design_idea" rows="7" required placeholder="Tell me the wording, theme, person, hobby, year, breed, colours, style or private joke you have in mind."></textarea>
+</label>
+
+<label class="form-full">
+<span>Anything else?</span>
+<textarea name="extra_details" rows="4" placeholder="Sizes, preferred colours, product examples, repeat order potential, or links to existing 1.44MB Originals designs you like."></textarea>
+</label>
+
+<label class="form-consent">
+<input type="checkbox" name="privacy_confirmed" value="yes" required>
+<span>I understand my details will be used to reply to this bespoke request, as described in the <a href="privacy.html">Privacy Policy</a>.</span>
+</label>
+
+<div class="form-actions">
+<button class="big-button" type="submit">Send Bespoke Request</button>
+<p class="smalltext">Please do not send copyrighted logos, trademarks or artwork unless you have permission to use them.</p>
+</div>
+
+<div class="form-status" id="bespoke-form-status" role="status" aria-live="polite"></div>
+</form>
 </section>
 
 <section class="section cta-panel">
@@ -119,6 +201,7 @@ Send the rough idea, the product you want, and any wording or visual direction. 
 </div>
 
 <script src="js/site-nav.js" defer></script>
+<script src="js/bespoke-form.js" defer></script>
 <script>
 document.addEventListener("click", function(e) {
     const link = e.target.closest("a");
