@@ -1322,3 +1322,171 @@ width:min(88vw, 290px);
 width:112px;
 }
 }
+
+
+.footer-links{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:8px;
+margin:12px auto 0;
+}
+
+.footer-links a{
+color:inherit;
+text-decoration:underline;
+text-underline-offset:3px;
+}
+
+.footer-note{
+max-width:760px;
+margin:10px auto 0;
+font-size:12px;
+opacity:0.82;
+}
+
+.legal-page{
+max-width:880px;
+margin:42px auto 0;
+text-align:left;
+}
+
+.legal-page section{
+margin-top:34px;
+}
+
+.legal-page h2{
+font-size:clamp(24px, 3vw, 34px);
+}
+
+.legal-page table{
+width:100%;
+border-collapse:collapse;
+margin-top:18px;
+font-size:14px;
+}
+
+.legal-page th,
+.legal-page td{
+border:1px solid var(--dark-line);
+padding:12px;
+vertical-align:top;
+}
+
+.legal-page th{
+background:rgba(255,255,255,0.08);
+text-align:left;
+}
+
+.legal-page a{
+color:#7ee8c3;
+}
+
+.cookie-consent{
+position:fixed;
+left:0;
+right:0;
+bottom:0;
+z-index:1000;
+padding:16px;
+background:rgba(10,12,18,0.72);
+backdrop-filter:blur(10px);
+}
+
+.cookie-consent__panel{
+width:min(980px, 100%);
+margin:0 auto;
+display:grid;
+grid-template-columns:minmax(0, 1fr) auto;
+gap:18px;
+align-items:center;
+padding:18px;
+background:#fff;
+color:#15171c;
+border-radius:8px;
+box-shadow:0 18px 60px rgba(0,0,0,0.28);
+text-align:left;
+}
+
+.cookie-consent h2{
+margin:0 0 8px;
+font-size:22px;
+color:#15171c;
+}
+
+.cookie-consent p{
+margin:0;
+color:#333842;
+}
+
+.cookie-consent details{
+margin-top:10px;
+}
+
+.cookie-consent summary{
+cursor:pointer;
+font-weight:800;
+}
+
+.cookie-consent__actions{
+display:flex;
+flex-wrap:wrap;
+justify-content:flex-end;
+gap:10px;
+}
+
+.cookie-button{
+min-height:44px;
+padding:12px 16px;
+border:0;
+border-radius:6px;
+font-weight:800;
+cursor:pointer;
+}
+
+.cookie-button-primary{
+background:#15171c;
+color:#fff;
+}
+
+.cookie-button-secondary{
+background:#eef1f3;
+color:#15171c;
+box-shadow:inset 0 0 0 1px rgba(21,23,28,0.16);
+}
+
+@media (max-width: 720px){
+.cookie-consent__panel{
+grid-template-columns:1fr;
+}
+
+.cookie-consent__actions{
+justify-content:stretch;
+}
+
+.cookie-button{
+width:100%;
+}
+
+.legal-page table,
+.legal-page thead,
+.legal-page tbody,
+.legal-page th,
+.legal-page td,
+.legal-page tr{
+display:block;
+}
+
+.legal-page th{
+display:none;
+}
+
+.legal-page td{
+border-bottom:0;
+}
+
+.legal-page tr{
+border:1px solid var(--dark-line);
+margin-bottom:12px;
+}
+}
