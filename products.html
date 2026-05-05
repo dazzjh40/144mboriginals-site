@@ -5,8 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Shop Collections | 1.44MB Originals</title>
-<meta name="description" content="Browse 1.44MB Originals collections including retro tech shirts, birthday version gifts, vanlife apparel, fishing designs, dog apparel and bespoke print requests.">
+<title>Full Catalogue | 1.44MB Originals</title>
+<meta name="description" content="Browse the full 1.44MB Originals catalogue from Etsy, including retro tech gifts, birthday version shirts, mugs, notebooks, dog apparel, vanlife designs, fishing gifts and bespoke print ideas.">
 <link rel="canonical" href="https://144mboriginals.com/products.html">
 
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -23,69 +23,44 @@
 
 <img src="logo.png" class="logo" alt="1.44MB Originals logo">
 
-<h1>Shop 1.44MB Originals</h1>
+<h1>Full Catalogue</h1>
 
 <div class="tagline">
-Ready-made collections on Etsy, plus a route for custom print ideas.
+Browse the full Etsy catalogue from one searchable shop page.
 </div>
 
 <div id="nav-placeholder"></div>
 
-<section class="section">
-<h2>Browse Collections</h2>
-<p class="section-intro">
-Choose a theme below, preview the range, then continue to Etsy for secure checkout and product options.
+<section class="section catalogue-section">
+<div class="section-heading">
+<p class="eyebrow">Generated from Etsy</p>
+<h2>All live catalogue items in one place.</h2>
+<p>
+This page is generated from the Etsy listings export, so new products can be added without hand-building a page for each item.
 </p>
+</div>
 
-<div class="products collection-products">
-<a href="originals.html">
-<div class="product">
-<img src="images/small_img/retro-tech/144mb-originals_minimal_tee_royal_blue_flat.webp" alt="1.44MB Originals logo shirt">
-<div class="product-title">1.44MB Originals Range</div>
-<p class="smalltext">Branded retro computing gifts and apparel.</p>
+<div class="catalogue-toolbar" aria-label="Catalogue filters">
+<label>
+<span>Search</span>
+<input id="catalogue-search" type="search" placeholder="Search titles, tags or categories">
+</label>
+<label>
+<span>Collection</span>
+<select id="catalogue-collection">
+<option value="all">All collections</option>
+</select>
+</label>
+<label>
+<span>Product type</span>
+<select id="catalogue-type">
+<option value="all">All product types</option>
+</select>
+</label>
 </div>
-</a>
 
-<a href="retro-tech.html">
-<div class="product">
-<img src="images/thumbs/retro-tech/system_properties_tee_black_flat.webp" alt="System Properties retro tech shirt">
-<div class="product-title">Retro Tech Apparel</div>
-<p class="smalltext">Software jokes, floppy disks and classic system nostalgia.</p>
-</div>
-</a>
-
-<a href="birthday.html">
-<div class="product">
-<img src="images/small_img/birthday/birthday_1984_dkblue_flat.webp" alt="Birthday version shirt">
-<div class="product-title">Birthday Version Shirts</div>
-<p class="smalltext">Birth years turned into stable builds and version numbers.</p>
-</div>
-</a>
-
-<a href="dog-apparel.html">
-<div class="product">
-<img src="images/small_img/dogs/labrador_white_pose.webp" alt="Labrador dog apparel design">
-<div class="product-title">Dog Apparel</div>
-<p class="smalltext">Breed-led designs for dog people and gift buyers.</p>
-</div>
-</a>
-
-<a href="vanlife.html">
-<div class="product">
-<img src="images/small_img/vanlife/vanlife_level_sand_tee_flat.webp" alt="Vanlife t-shirt design">
-<div class="product-title">Vanlife Apparel</div>
-<p class="smalltext">Campervan, road trip and weekend explorer designs.</p>
-</div>
-</a>
-
-<a href="fishing.html">
-<div class="product">
-<img src="images/small_img/fishing/fishing_trouble_grey_sweatshirt_pose.webp" alt="Fishing sweatshirt design">
-<div class="product-title">Fishing Gifts</div>
-<p class="smalltext">Relaxed apparel and gifts for anglers.</p>
-</div>
-</a>
-</div>
+<div class="catalogue-summary" id="catalogue-summary">Loading catalogue...</div>
+<div class="catalogue-grid" id="catalogue-grid"></div>
 </section>
 
 <section class="section request-layout">
@@ -130,6 +105,8 @@ If the existing listings are close but not quite right, send a custom request. B
 </div>
 
 <script src="js/site-nav.js" defer></script>
+<script src="js/catalogue-data.js" defer></script>
+<script src="js/catalogue.js" defer></script>
 <script>
 document.addEventListener("click", function(e) {
     const link = e.target.closest("a");
