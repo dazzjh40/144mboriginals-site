@@ -180,6 +180,18 @@
 
       window.copyVersionLink = copyLink;
 
+      function buildVersionRequestUrl(year, version) {
+        const params = new URLSearchParams({
+          source: "version-finder",
+          year: String(year),
+          version: version,
+          product: "T-shirt",
+          wording: `Born in ${year}, Version ${version} Stable Build`
+        });
+
+        return `bespoke.html?${params.toString()}#bespoke-form`;
+      }
+
       function renderVersion(year) {
         const version = calculateVersionFromYear(year);
         const item = birthdayVersionData[year];
@@ -223,6 +235,7 @@
               <p><strong>Born in ${year}</strong></p>
               <p>Your year is not in the birthday collection yet.</p>
               <div class="version-buttons">
+                <a class="button" href="${escapeHtml(buildVersionRequestUrl(year, version))}">Request Your Version</a>
                 <a class="button" href="birthday.html">Browse Available Birthday Shirts</a>
               </div>
               <div class="version-share">

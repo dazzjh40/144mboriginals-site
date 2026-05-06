@@ -11,6 +11,39 @@ document.addEventListener("DOMContentLoaded", () => {
         if (type) status.classList.add(type);
     }
 
+    function setFieldValue(name, value) {
+        const field = form.elements[name];
+        if (field && !field.value && value) field.value = value;
+    }
+
+    function prefillVersionRequest() {
+        const params = new URLSearchParams(window.location.search);
+
+        if (params.get("source") !== "version-finder") return;
+
+        const year = params.get("year") || "";
+        const version = params.get("version") || "";
+        const product = params.get("product") || "T-shirt";
+        const wording = params.get("wording") || `Born in ${year}, Version ${version} Stable Build`;
+        const sourceUrl = `${window.location.origin}/version.html${year ? `?year=${encodeURIComponent(year)}` : ""}`;
+        const message = [
+            "I used the Version Finder and would like to request a birthday version design.",
+            "",
+            year ? `Birth year: ${year}` : "",
+            version ? `Calculated version: ${version}` : "",
+            wording ? `Suggested wording: ${wording}` : "",
+            `Product idea: ${product}`,
+            `Source page: ${sourceUrl}`
+        ].filter(line => line !== "").join("\n");
+
+        setFieldValue("product_type", product);
+        setFieldValue("quantity", "1 item");
+        setFieldValue("message", message);
+        setFieldValue("extra_details", "Please let me know whether this version design can be made and which colours or product options would work best.");
+    }
+
+    prefillVersionRequest();
+
     form.addEventListener("submit", async event => {
         const action = form.getAttribute("action") || "";
 
