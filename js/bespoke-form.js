@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } catch (error) {
             const message = error && error.message && error.message !== "Form submission failed"
                 ? error.message
-                : "Sorry, the form could not be sent. Please try again or email contact@144mboriginals.com.";
+                : "Sorry, the form could not be sent. Please try again or email info@144mboriginals.com.";
             setStatus(message, "is-error");
         } finally {
             if (submitButton) submitButton.disabled = false;
