@@ -25,7 +25,8 @@
 
     function renderCard(item) {
         const image = item.image || "logo.png";
-        const tags = [item.collection, item.type].filter(Boolean);
+        const productCategory = item.category || item.type;
+        const tags = [item.collection, productCategory].filter(Boolean);
 
         return `
             <article class="catalogue-card">
@@ -54,15 +55,17 @@
         if (!data || !grid || !summary || !search || !collection || !type) return;
 
         collection.insertAdjacentHTML("beforeend", data.collections.map(option).join(""));
-        type.insertAdjacentHTML("beforeend", data.types.map(option).join(""));
+        type.insertAdjacentHTML("beforeend", (data.categories || data.types || []).map(option).join(""));
 
         function matches(item) {
             const query = search.value.trim().toLowerCase();
             const collectionValue = collection.value;
             const typeValue = type.value;
+            const productCategory = item.category || item.type;
             const haystack = [
                 item.title,
                 item.collection,
+                item.category,
                 item.type,
                 item.excerpt,
                 ...(item.tags || [])
@@ -70,7 +73,7 @@
 
             return (!query || haystack.includes(query)) &&
                 (collectionValue === "all" || item.collection === collectionValue) &&
-                (typeValue === "all" || item.type === typeValue);
+                (typeValue === "all" || productCategory === typeValue);
         }
 
         function render() {

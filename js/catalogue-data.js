@@ -1,6 +1,6 @@
 window.CATALOGUE_DATA = {
-  "generatedAt": "2026-05-05T17:30:16.674Z",
-  "source": "EtsyListingsDownload (4).csv",
+  "generatedAt": "2026-05-06T11:41:22.508Z",
+  "source": "EtsyListingsDownload.csv",
   "shopUrl": "https://www.etsy.com/shop/HandyEnough",
   "count": 107,
   "collections": [
@@ -12,14 +12,21 @@ window.CATALOGUE_DATA = {
     "Retro Tech",
     "Vanlife"
   ],
-  "types": [
-    "Bags & Accessories",
-    "Gifts",
-    "Homeware",
-    "Hoodies & Sweatshirts",
-    "Mugs",
-    "Notebooks",
-    "T-Shirts"
+  "categories": [
+    "T-Shirt",
+    "Sweat Shirt",
+    "Hoodie",
+    "Mug",
+    "Cup",
+    "Journal",
+    "Bag",
+    "Backpack",
+    "Laptop Sleeve",
+    "Phone Case",
+    "Cushion",
+    "Cap",
+    "Banner",
+    "Flag"
   ],
   "items": [
     {
@@ -29,7 +36,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 30969,
       "collection": "Office & Everyday Humour",
-      "type": "T-Shirts",
       "tags": [
         "Real Life No Filters",
         "Funny Statement Tee",
@@ -58,7 +64,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/dd5656/7898398968/il_fullxfull.7898398968_lma0.jpg"
       ],
       "excerpt": "Some things work better without filters.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Real%20Life%20No%20Filters%20T%20Shirt%20Minimalist%20Social"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Real%20Life%20No%20Filters%20T%20Shirt%20Minimalist%20Social",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-2",
@@ -67,7 +74,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 999,
       "collection": "Retro Tech",
-      "type": "Mugs",
       "tags": [
         "Legacy Hardware",
         "Tech Humor Mug",
@@ -92,7 +98,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/b61b7e/7570458400/il_fullxfull.7570458400_2nz2.jpg"
       ],
       "excerpt": "Some hardware may be legacy. That does not mean it is obsolete.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Legacy%20Hardware%2011oz%20White%20Mug%20Funny%20Tech%20Humor"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Legacy%20Hardware%2011oz%20White%20Mug%20Funny%20Tech%20Humor",
+      "category": "Mug"
     },
     {
       "id": "etsy-3",
@@ -101,7 +108,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 999,
       "collection": "Fishing",
-      "type": "Notebooks",
       "tags": [
         "Procrastination",
         "Funny Journal",
@@ -128,7 +134,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/06404f/7570165364/il_fullxfull.7570165364_46ce.jpg"
       ],
       "excerpt": "Some people procrastinate. Others simply prioritise differently.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Im%20Not%20Procrastinating%20Im%20Prioritising%20Differently%20Hardcover%20Matte"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Im%20Not%20Procrastinating%20Im%20Prioritising%20Differently%20Hardcover%20Matte",
+      "category": "Journal"
     },
     {
       "id": "etsy-4",
@@ -137,7 +144,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 1998,
       "collection": "Office & Everyday Humour",
-      "type": "Mugs",
       "tags": [
         "Piston Broke Mug",
         "Funny Mechanic Mug",
@@ -159,7 +165,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/76716c/7566692818/il_fullxfull.7566692818_7e0b.jpg"
       ],
       "excerpt": "Some mornings you wake up ready to fix the world. Other mornings the piston broke.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Mechanic%20Coffee%20Mug%20Piston%20Broke%20Garage%20Humor"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Mechanic%20Coffee%20Mug%20Piston%20Broke%20Garage%20Humor",
+      "category": "Mug"
     },
     {
       "id": "etsy-5",
@@ -168,7 +175,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 6993,
       "collection": "Office & Everyday Humour",
-      "type": "Gifts",
       "tags": [
         "Piston Broke",
         "Mechanic Hat",
@@ -194,7 +200,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/5058d6/7567485532/il_fullxfull.7567485532_3tld.jpg"
       ],
       "excerpt": "Bring garage humour into everyday wear with this Piston Broke trucker cap, made for mechanics, tinkerers, van lifers and anyone who knows that projects do not always go t",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Piston%20Broke%20Trucker%20Cap%20Funny%20Mechanic%20Hat%20Garage"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Piston%20Broke%20Trucker%20Cap%20Funny%20Mechanic%20Hat%20Garage",
+      "category": "Cap"
     },
     {
       "id": "etsy-6",
@@ -203,7 +210,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 8991,
       "collection": "Fishing",
-      "type": "Mugs",
       "tags": [
         "Procrastinating Mug",
         "Office Humor Mug",
@@ -232,7 +238,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/6c3788/7570110702/il_fullxfull.7570110702_oeur.jpg"
       ],
       "excerpt": "Some people procrastinate. Others simply prioritise… differently.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Procrastinating%20Coffee%20Mug%20Sarcastic%20Office%20Humor%20Gift"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Procrastinating%20Coffee%20Mug%20Sarcastic%20Office%20Humor%20Gift",
+      "category": "Mug"
     },
     {
       "id": "etsy-7",
@@ -241,7 +248,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 29970,
       "collection": "Other Gifts",
-      "type": "T-Shirts",
       "tags": [
         "Cherry Shirt",
         "Cherry Tee",
@@ -271,7 +277,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/fa05f6/7973749348/il_fullxfull.7973749348_9v0v.jpg"
       ],
       "excerpt": "A clean, minimal cherry design that keeps things simple and quietly playful. This subtle fruit graphic tee is designed for those who prefer understated style with a hint ",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Minimal%20Cherry%20T%20Shirt%20Cute%20Aesthetic%20Fruit%20Tee"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Minimal%20Cherry%20T%20Shirt%20Cute%20Aesthetic%20Fruit%20Tee",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-8",
@@ -280,7 +287,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 50949,
       "collection": "Other Gifts",
-      "type": "T-Shirts",
       "tags": [
         "Cherry Shirt",
         "Aesthetic Tee",
@@ -310,7 +316,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/e785ae/7957668332/il_fullxfull.7957668332_a8zi.jpg"
       ],
       "excerpt": "When things are just perfect. The Gildan Softstyle® 64000 redefines casual comfort with a modern unisex cut and ultra-soft materials. Solid colors are 100% cotton, while ",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Perfect%20Cherry%20Aesthetic%20T%20Shirt%20Minimal%20Fruit%20Graphic"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Perfect%20Cherry%20Aesthetic%20T%20Shirt%20Minimal%20Fruit%20Graphic",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-9",
@@ -319,7 +326,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 34965,
       "collection": "Other Gifts",
-      "type": "T-Shirts",
       "tags": [
         "Cherry Shirt",
         "Aesthetic Tee",
@@ -349,7 +355,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/a1adce/7957659314/il_fullxfull.7957659314_gghk.jpg"
       ],
       "excerpt": "A clean, aesthetic cherry graphic designed for a soft, effortless look. This piece leans into minimal visual style with a subtle edge, easy to wear, easy to pair, and des",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Cherry%20Aesthetic%20T%20Shirt%20Minimal%20Fruit%20Graphic%20Tee"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Cherry%20Aesthetic%20T%20Shirt%20Minimal%20Fruit%20Graphic%20Tee",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-10",
@@ -358,7 +365,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 35964,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [],
       "image": "https://i.etsystatic.com/63847702/r/il/f1b039/7989668259/il_fullxfull.7989668259_lr6m.jpg",
       "images": [
@@ -372,7 +378,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/2da58c/7941703832/il_fullxfull.7941703832_84ek.jpg"
       ],
       "excerpt": "Some days you are not fully charged, and that is fine.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Low%20Battery%20T%20Shirt%20Funny%20Tech%20Shirt%20Power"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Low%20Battery%20T%20Shirt%20Funny%20Tech%20Shirt%20Power",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-11",
@@ -381,7 +388,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 32967,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "System Error Shirt",
         "Funny IT Shirt",
@@ -411,7 +417,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/4acc1f/7940162996/il_fullxfull.7940162996_41d1.jpg"
       ],
       "excerpt": "This System Error T Shirt features a clean, high contrast warning design with the phrase “Critical Failure”, making it a subtle but relatable piece of humour for anyone i",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=System%20Error%20T%20Shirt%20Funny%20IT%20Shirt%20Critical"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=System%20Error%20T%20Shirt%20Funny%20IT%20Shirt%20Critical",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-12",
@@ -420,7 +427,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 50949,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "Legacy Hardware",
         "Known Issues",
@@ -450,7 +456,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/4aa73c/7963344439/il_fullxfull.7963344439_azpo.jpg"
       ],
       "excerpt": "Legacy hardware does not mean obsolete. It means reliable.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Legacy%20Hardware%20T%20Shirt%20Known%20Issues%20Apply%20Tee"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Legacy%20Hardware%20T%20Shirt%20Known%20Issues%20Apply%20Tee",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-13",
@@ -459,7 +466,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 47952,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "System Properties",
         "Retro Computer",
@@ -489,7 +495,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/567e13/7914879824/il_fullxfull.7914879824_sntb.jpg"
       ],
       "excerpt": "Runs on low storage. Performs best after coffee.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Retro%20Computer%20Shirt%201.44MB%20Floppy%20Disk%20Shirt%20Funny"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Retro%20Computer%20Shirt%201.44MB%20Floppy%20Disk%20Shirt%20Funny",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-14",
@@ -498,7 +505,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 29970,
       "collection": "Office & Everyday Humour",
-      "type": "T-Shirts",
       "tags": [
         "Garage Dad Gift",
         "Funny Dad Shirt",
@@ -527,7 +533,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/b3cbe2/7911894792/il_fullxfull.7911894792_4kfb.jpg"
       ],
       "excerpt": "🔧 The perfect gift for the dad who disappears into the garage, shed or workshop",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Garage%20Dad%20Shirt%20UK%20Gift%20for%20Dad"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Garage%20Dad%20Shirt%20UK%20Gift%20for%20Dad",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-15",
@@ -536,7 +543,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 52947,
       "collection": "Office & Everyday Humour",
-      "type": "T-Shirts",
       "tags": [
         "Garage Dad Shirt Uk",
         "Diy Dad Shirt Uk",
@@ -564,7 +570,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/c4bd46/7959305765/il_fullxfull.7959305765_birl.jpg"
       ],
       "excerpt": "For dads who disappear into the garage and do not return any time soon. This “I am going to the garage, I could be some time” t shirt captures that familiar moment with a",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Garage%20Dad%20Shirt%20UK%20Funny%20DIY%20Dad%20T"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Garage%20Dad%20Shirt%20UK%20Funny%20DIY%20Dad%20T",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-16",
@@ -573,7 +580,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 46953,
       "collection": "Other Gifts",
-      "type": "T-Shirts",
       "tags": [
         "Garage Dad Shirt",
         "Mechanic Dad Tee",
@@ -603,7 +609,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/d1aca3/7911437340/il_fullxfull.7911437340_8xra.jpg"
       ],
       "excerpt": "Switch into full focus mode with this “Garage Mode Do Not Disturb” t shirt, designed for dads who are always fixing, building, or tinkering. Whether it is working on the ",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Garage%20Mode%20Do%20Not%20Disturb%20T%20Shirt%20Funny"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Garage%20Mode%20Do%20Not%20Disturb%20T%20Shirt%20Funny",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-17",
@@ -612,7 +619,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 1998,
       "collection": "Office & Everyday Humour",
-      "type": "Mugs",
       "tags": [
         "Dad Joke Mug",
         "Funny Dad Mug",
@@ -642,7 +648,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/9f2d57/7910668168/il_fullxfull.7910668168_sg0y.jpg"
       ],
       "excerpt": "Bring a bit of humour to his morning routine with this “Dad Joke Mode Activated” mug. Perfect for dads who cannot resist a classic dad joke, this design features a clean,",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Dad%20Joke%20Mode%20Activated%20Mug%20Funny%20Fathers%20Day"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Dad%20Joke%20Mode%20Activated%20Mug%20Funny%20Fathers%20Day",
+      "category": "Mug"
     },
     {
       "id": "etsy-18",
@@ -651,7 +658,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 52947,
       "collection": "Office & Everyday Humour",
-      "type": "T-Shirts",
       "tags": [],
       "image": "https://i.etsystatic.com/63847702/r/il/606edc/7959388189/il_fullxfull.7959388189_6fb9.jpg",
       "images": [
@@ -667,7 +673,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/1d4afe/7911413788/il_fullxfull.7911413788_ly0l.jpg"
       ],
       "excerpt": "Bring the laughs this Father’s Day with this “Dad Joke Mode Activated” t shirt, designed for dads who never miss a chance to deliver a classic groan worthy joke. Featurin",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Dad%20Joke%20Mode%20Activated%20T%20Shirt%20Funny%20Fathers"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Dad%20Joke%20Mode%20Activated%20T%20Shirt%20Funny%20Fathers",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-19",
@@ -676,7 +683,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 999,
       "collection": "Other Gifts",
-      "type": "Mugs",
       "tags": [
         "Promoted To Dad",
         "New Dad Mug",
@@ -702,7 +708,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/7038e0/7904279692/il_fullxfull.7904279692_qexj.jpg"
       ],
       "excerpt": "Celebrate the biggest promotion of all with this bold and clean “Promoted to Dad 2026” mug. Designed in a strong badge style, this coffee cup is the perfect gift for new ",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Promoted%20to%20Dad%202026%20Mug%20New%20Dad%20Gift"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Promoted%20to%20Dad%202026%20Mug%20New%20Dad%20Gift",
+      "category": "Mug"
     },
     {
       "id": "etsy-20",
@@ -711,7 +718,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 54945,
       "collection": "Other Gifts",
-      "type": "T-Shirts",
       "tags": [
         "Promoted To Dad",
         "New Dad Shirt",
@@ -741,7 +747,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/8c683d/7904259680/il_fullxfull.7904259680_3h9t.jpg"
       ],
       "excerpt": "Celebrate the biggest promotion of all with this clean and bold “Promoted to Dad 2026” t shirt. Designed with a strong badge style layout, this shirt makes the perfect gi",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Promoted%20to%20Dad%202026%20Shirt%20New%20Dad%20Gift"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Promoted%20to%20Dad%202026%20Shirt%20New%20Dad%20Gift",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-21",
@@ -750,7 +757,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 41958,
       "collection": "Birthday Versions",
-      "type": "T-Shirts",
       "tags": [
         "Grill Master Dad",
         "Bbq Dad Shirt",
@@ -779,7 +785,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/af4012/7959386169/il_fullxfull.7959386169_cu9c.jpg"
       ],
       "excerpt": "Celebrate the ultimate BBQ legend with this Grill Master Dad t shirt, designed for dads who rule the grill. Featuring a fun and bold sausage chef graphic with flames, thi",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Grill%20Master%20Dad%20T%20Shirt%20Funny%20BBQ%20Dad"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Grill%20Master%20Dad%20T%20Shirt%20Funny%20BBQ%20Dad",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-22",
@@ -788,7 +795,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 41958,
       "collection": "Dog Apparel",
-      "type": "T-Shirts",
       "tags": [
         "Boxer Dog Shirt",
         "Dog Dad Tshirt",
@@ -818,7 +824,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/0baad0/7949257999/il_fullxfull.7949257999_ex0g.jpg"
       ],
       "excerpt": "Celebrate your love for your four legged best friend with this bold and playful Boxer Dog Dad t shirt. Featuring a striking boxer dog design with clean typography, this t",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Boxer%20Dog%20Dad%20T-Shirt%20Funny%20Boxer%20Owner%20Gift"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Boxer%20Dog%20Dad%20T-Shirt%20Funny%20Boxer%20Owner%20Gift",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-23",
@@ -827,7 +834,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 41958,
       "collection": "Fishing",
-      "type": "T-Shirts",
       "tags": [
         "Funny Quote Tee",
         "Sarcastic Tshirt",
@@ -853,7 +859,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/da5128/7911353868/il_fullxfull.7911353868_jzr6.jpg"
       ],
       "excerpt": "Absence makes the heart grow fonder… just saying. This tongue in cheek graphic tee delivers dry humour with a playful edge, perfect for friends, relationships and everyda",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Absence%20Makes%20the%20Heart%20Grow%20Fonder%20Funny%20T"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Absence%20Makes%20the%20Heart%20Grow%20Fonder%20Funny%20T",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-24",
@@ -862,7 +869,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 47952,
       "collection": "Vanlife",
-      "type": "T-Shirts",
       "tags": [],
       "image": "https://i.etsystatic.com/63847702/r/il/77db34/7898206744/il_fullxfull.7898206744_p1n2.jpg",
       "images": [
@@ -878,7 +884,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/37a805/7898204656/il_fullxfull.7898204656_eot4.jpg"
       ],
       "excerpt": "The Gildan 5000 heavy cotton tee is a dependable classic made for everyday wear and custom printing. Its 100% cotton fabric is tightly knit to give designs sharper detail",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Feeling%20Fruit%20-%20Upside%20Down%20pineapple%20-%20Unisex"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Feeling%20Fruit%20-%20Upside%20Down%20pineapple%20-%20Unisex",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-25",
@@ -887,7 +894,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 39960,
       "collection": "Other Gifts",
-      "type": "T-Shirts",
       "tags": [
         "Niente Fretta",
         "Italian Tshirt",
@@ -917,7 +923,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/417ac5/7944032969/il_fullxfull.7944032969_ta3m.jpg"
       ],
       "excerpt": "A simple phrase with a calm message.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Niente%20Fretta%20Italian%20Quote%20T-Shirt%20Relaxed%20Lifestyle%20Minimalist"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Niente%20Fretta%20Italian%20Quote%20T-Shirt%20Relaxed%20Lifestyle%20Minimalist",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-26",
@@ -926,7 +933,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 45954,
       "collection": "Other Gifts",
-      "type": "T-Shirts",
       "tags": [
         "Me Gusta Asi",
         "Spanish Tshirt",
@@ -956,7 +962,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/9892ce/7897753556/il_fullxfull.7897753556_igvs.jpg"
       ],
       "excerpt": "A simple statement with quiet confidence.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Me%20Gusta%20Asi%20T%20Shirt%20Minimalist%20Spanish%20Quote"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Me%20Gusta%20Asi%20T%20Shirt%20Minimalist%20Spanish%20Quote",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-27",
@@ -965,7 +972,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 29970,
       "collection": "Other Gifts",
-      "type": "T-Shirts",
       "tags": [
         "Sun Kissed Shirt",
         "Summer Tshirt",
@@ -995,7 +1001,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/d49e01/7948957223/il_fullxfull.7948957223_cx0a.jpg"
       ],
       "excerpt": "Bring effortless summer vibes to your wardrobe with this stylish “Sun Kissed” graphic t shirt. Featuring a bold lip print and playful handwritten style text, this design ",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Sun%20Kissed%20Lips%20Graphic%20Tee%20Romantic%20Summer%20Outfit"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Sun%20Kissed%20Lips%20Graphic%20Tee%20Romantic%20Summer%20Outfit",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-28",
@@ -1004,7 +1011,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 25974,
       "collection": "Other Gifts",
-      "type": "T-Shirts",
       "tags": [
         "Spanish Tshirt",
         "Corazon Libre",
@@ -1034,7 +1040,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/c99d9a/7944013915/il_fullxfull.7944013915_cwb2.jpg"
       ],
       "excerpt": "Capture a free spirited summer feeling with this “Corazón Libre” graphic t shirt. Featuring a relaxed handwritten style design with a heart and wave illustration, this te",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Coraz%20n%20Libre%20T-Shirt%20Heart%20Wave%20Graphic%20Tee"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Coraz%20n%20Libre%20T-Shirt%20Heart%20Wave%20Graphic%20Tee",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-29",
@@ -1043,7 +1050,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 35964,
       "collection": "Dog Apparel",
-      "type": "T-Shirts",
       "tags": [],
       "image": "https://i.etsystatic.com/63847702/r/il/b553f3/7928406715/il_fullxfull.7928406715_k5q5.jpg",
       "images": [
@@ -1059,7 +1065,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/f48d56/7928365243/il_fullxfull.7928365243_hiq5.jpg"
       ],
       "excerpt": "Show off your love for your four legged best friend with this “Love Me Love My Dog” graphic t shirt. Featuring a detailed line art dog illustration paired with a playful,",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Love%20Me%20Love%20My%20Dog%20Graphic%20Tee%20Unisex"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Love%20Me%20Love%20My%20Dog%20Graphic%20Tee%20Unisex",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-30",
@@ -1068,7 +1075,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 39960,
       "collection": "Other Gifts",
-      "type": "T-Shirts",
       "tags": [
         "Summer Tshirt",
         "Italian Tshirt",
@@ -1098,7 +1104,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/c1c180/7946135207/il_fullxfull.7946135207_afh9.jpg"
       ],
       "excerpt": "Summer vacation t shirt with relaxed beach vibe and Italian inspired design. Perfect for holiday outfits, beach days, and warm weather styling.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Ciao%20Estate%20Italian%20Summer%20T-Shirt%20Beach%20Vacation%20Outfit"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Ciao%20Estate%20Italian%20Summer%20T-Shirt%20Beach%20Vacation%20Outfit",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-31",
@@ -1107,7 +1114,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 27972,
       "collection": "Other Gifts",
-      "type": "T-Shirts",
       "tags": [],
       "image": "https://i.etsystatic.com/63847702/r/il/a08fd9/7945839763/il_fullxfull.7945839763_nthy.jpg",
       "images": [
@@ -1122,7 +1128,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/17cc8c/7945738989/il_fullxfull.7945738989_6tmg.jpg"
       ],
       "excerpt": "Bring a light, playful summer vibe to your wardrobe with this “Tiempo de Fiesta” graphic t shirt. Featuring a fun beach inspired illustration with sun, birds and a cheeky",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Tiempo%20de%20Fiesta%20Beach%20Graphic%20Tee%20Summer%20Vacation"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Tiempo%20de%20Fiesta%20Beach%20Graphic%20Tee%20Summer%20Vacation",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-32",
@@ -1131,7 +1138,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 36963,
       "collection": "Dog Apparel",
-      "type": "T-Shirts",
       "tags": [
         "Staffie Mom Shirt",
         "Staffy T Shirt",
@@ -1161,7 +1167,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/e05592/7899206724/il_fullxfull.7899206724_ok76.jpg"
       ],
       "excerpt": "Show your love for your loyal companion with this adorable Staffie Mom t shirt. Featuring a cute Staffordshire Bull Terrier illustration with a playful expression, this d",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Staffie%20Mom%20T-Shirt%20Staffordshire%20Dog%20Graphic%20Tee%20Unisex"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Staffie%20Mom%20T-Shirt%20Staffordshire%20Dog%20Graphic%20Tee%20Unisex",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-33",
@@ -1170,7 +1177,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 31968,
       "collection": "Office & Everyday Humour",
-      "type": "T-Shirts",
       "tags": [
         "Rock Sock Clock",
         "Funny Meme Shirt",
@@ -1199,7 +1205,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/aad9ed/7903637225/il_fullxfull.7903637225_pssv.jpg"
       ],
       "excerpt": "Funny Rock Sock Clock shirt based on a viral meme that only some people instantly understand.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Rock%20Sock%20Clock%20Expert%20Shirt%20Viral%20Meme"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Rock%20Sock%20Clock%20Expert%20Shirt%20Viral%20Meme",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-34",
@@ -1208,7 +1215,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 45954,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "Birthday Shirt",
         "1975 Birthday",
@@ -1238,7 +1244,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/da84cb/7945859921/il_fullxfull.7945859921_ns9i.jpg"
       ],
       "excerpt": "Turn a birth year into a software version.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=1975%20Version%205.1%20Stable%20Build%20T-Shirt%20Retro%20Tech"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=1975%20Version%205.1%20Stable%20Build%20T-Shirt%20Retro%20Tech",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-35",
@@ -1247,7 +1254,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 1998,
       "collection": "Vanlife",
-      "type": "Gifts",
       "tags": [
         "Pineapple Banner",
         "Funny Camp Banner",
@@ -1273,7 +1279,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/0cce58/7812713508/il_fullxfull.7812713508_6qrk.jpg"
       ],
       "excerpt": "Add a playful touch to your campsite, campervan setup or garden with this Feeling Fruity pineapple banner. Featuring a colourful fruit collage with a pineapple centrepiec",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Feeling%20Fruity%20Pineapple%20Banner%20Campervan%20Festival%20Outdoor%20Vinyl"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Feeling%20Fruity%20Pineapple%20Banner%20Campervan%20Festival%20Outdoor%20Vinyl",
+      "category": "Banner"
     },
     {
       "id": "etsy-36",
@@ -1282,7 +1289,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 3996,
       "collection": "Vanlife",
-      "type": "Gifts",
       "tags": [
         "Upside Pineapple",
         "Pineapple Flag",
@@ -1305,7 +1311,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/d9b533/7860583843/il_fullxfull.7860583843_b6k3.jpg"
       ],
       "excerpt": "Add a little humour to your campsite, garden or festival setup with this Feeling Fruity upside down pineapple flag. Featuring a colourful fruit collage with a cheeky hidd",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Upside%20Down%20Pineapple%20Flag%20Funny%20Camping%20Banner%20Feeling"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Upside%20Down%20Pineapple%20Flag%20Funny%20Camping%20Banner%20Feeling",
+      "category": "Flag"
     },
     {
       "id": "etsy-37",
@@ -1314,7 +1321,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 50949,
       "collection": "Dog Apparel",
-      "type": "T-Shirts",
       "tags": [
         "Bullmastiff Mom",
         "Bullmastiff Shirt",
@@ -1343,7 +1349,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/6cb25d/7853840152/il_fullxfull.7853840152_oqt8.jpg"
       ],
       "excerpt": "Show off your love for one of the most loyal and powerful dog breeds with this Bullmastiff Mom shirt. Featuring a bold Bullmastiff portrait with a clean curved text desig",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Bullmastiff%20Mom%20Shirt%20Large%20Breed%20Dog%20Lover%20Tee"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Bullmastiff%20Mom%20Shirt%20Large%20Breed%20Dog%20Lover%20Tee",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-38",
@@ -1352,7 +1359,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 2997,
       "collection": "Vanlife",
-      "type": "Homeware",
       "tags": [
         "Funny Pillow",
         "Outdoor Cushion",
@@ -1376,7 +1382,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/07d94e/7855691759/il_fullxfull.7855691759_r4hh.jpg"
       ],
       "excerpt": "Add a playful twist to your outdoor space with this Feelin Fruity outdoor pillow. Featuring a tongue in cheek upside down pineapple design with bright fruit artwork, this",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Feelin%20Fruity%20Outdoor%20Pillow%20Pineapple%20Cushion%20Vanlife%20Camping"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Feelin%20Fruity%20Outdoor%20Pillow%20Pineapple%20Cushion%20Vanlife%20Camping",
+      "category": "Cushion"
     },
     {
       "id": "etsy-39",
@@ -1385,7 +1392,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 40959,
       "collection": "Vanlife",
-      "type": "T-Shirts",
       "tags": [
         "Feeling Fruity",
         "Upside Pineapple",
@@ -1415,7 +1421,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/2d6e39/7946216263/il_fullxfull.7946216263_ns6r.jpg"
       ],
       "excerpt": "Serve a little mischief with this Feeling Fruity t shirt, featuring a playful fruit collage with a cheeky upside down pineapple hidden in plain sight. Bright, bold and ju",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Feeling%20Fruity%20Upside%20Down%20Pineapple%20Unisex%20Heavy%20Cotton"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Feeling%20Fruity%20Upside%20Down%20Pineapple%20Unisex%20Heavy%20Cotton",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-40",
@@ -1424,7 +1431,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 80919,
       "collection": "Dog Apparel",
-      "type": "T-Shirts",
       "tags": [
         "Border Collie",
         "Border Collie Mom",
@@ -1454,7 +1460,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/ce492b/7795071174/il_fullxfull.7795071174_cs7o.jpg"
       ],
       "excerpt": "Border Collie Mom Shirt – Perfect Gift for Border Collie Lovers",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Border%20Collie%20Mom%20Shirt%20Dog%20Lover%20Gift%20for"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Border%20Collie%20Mom%20Shirt%20Dog%20Lover%20Gift%20for",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-41",
@@ -1463,7 +1470,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 67932,
       "collection": "Dog Apparel",
-      "type": "T-Shirts",
       "tags": [
         "Chihuahua Mom",
         "Chihuahua Lover",
@@ -1493,7 +1499,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/427187/7874546991/il_fullxfull.7874546991_aojv.jpg"
       ],
       "excerpt": "Chihuahua Mom Shirt – Perfect Gift for Chihuahua Lovers",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Chihuahua%20Mom%20Shirt%20Dog%20Lover%20Gift%20for%20Owners"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Chihuahua%20Mom%20Shirt%20Dog%20Lover%20Gift%20for%20Owners",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-42",
@@ -1502,7 +1509,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 77922,
       "collection": "Dog Apparel",
-      "type": "T-Shirts",
       "tags": [
         "Dachshund Mom",
         "Dachshund Lover",
@@ -1532,7 +1538,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/aac32f/7794206882/il_fullxfull.7794206882_m68x.jpg"
       ],
       "excerpt": "Dachshund Mom Shirt – Perfect Gift for Dachshund Lovers",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Dachshund%20Mom%20Shirt%20Wiener%20Dog%20Lover%20Tee%20Dog"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Dachshund%20Mom%20Shirt%20Wiener%20Dog%20Lover%20Tee%20Dog",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-43",
@@ -1541,7 +1548,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 41958,
       "collection": "Dog Apparel",
-      "type": "T-Shirts",
       "tags": [
         "Labrador Retriever",
         "Lab Dog Mom",
@@ -1570,7 +1576,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/f4088d/7901236556/il_fullxfull.7901236556_13cd.jpg"
       ],
       "excerpt": "Labrador Retriever Mom Shirt – Perfect Gift for Lab Lovers",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Labrador%20Retriever%20Mom%20Shirt%20Dog%20Lover%20Gift%20for"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Labrador%20Retriever%20Mom%20Shirt%20Dog%20Lover%20Gift%20for",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-44",
@@ -1579,7 +1586,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 52947,
       "collection": "Dog Apparel",
-      "type": "T-Shirts",
       "tags": [
         "Boxer Dog",
         "Boxer Mom Shirt",
@@ -1609,7 +1615,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/c72d3a/7899241152/il_fullxfull.7899241152_pm4l.jpg"
       ],
       "excerpt": "Boxer Dog Mom Shirt – Perfect Gift for Boxer Lovers",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Boxer%20Dog%20Mom%20Shirt%20Boxer%20Illustration%20Loyal%20Companion"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Boxer%20Dog%20Mom%20Shirt%20Boxer%20Illustration%20Loyal%20Companion",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-45",
@@ -1618,7 +1625,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 59940,
       "collection": "Dog Apparel",
-      "type": "T-Shirts",
       "tags": [
         "French Bulldog",
         "Frenchie Mom",
@@ -1648,7 +1654,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/9dc5a0/7949209173/il_fullxfull.7949209173_ccng.jpg"
       ],
       "excerpt": "French Bulldog Mom Shirt – Perfect Gift for Dog Lovers",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=French%20Bulldog%20Mom%20Shirt%20Frenchie%20Dog%20Lover%20Gift"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=French%20Bulldog%20Mom%20Shirt%20Frenchie%20Dog%20Lover%20Gift",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-46",
@@ -1657,7 +1664,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 51948,
       "collection": "Dog Apparel",
-      "type": "T-Shirts",
       "tags": [
         "Yorkshire Terrier",
         "Yorkie Mom Shirt",
@@ -1685,7 +1691,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/6f6431/7946257403/il_fullxfull.7946257403_i4hf.jpg"
       ],
       "excerpt": "Yorkshire Terrier Mom Shirt – Perfect Gift for Dog Lovers",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Yorkshire%20Terrier%20Mom%20Shirt%20Yorkie%20Dog%20Lover%20Tee"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Yorkshire%20Terrier%20Mom%20Shirt%20Yorkie%20Dog%20Lover%20Tee",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-47",
@@ -1694,7 +1701,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 57942,
       "collection": "Dog Apparel",
-      "type": "T-Shirts",
       "tags": [
         "Golden Retriever",
         "Golden Mom Shirt",
@@ -1722,7 +1728,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/2e343a/7841801941/il_fullxfull.7841801941_jytq.jpg"
       ],
       "excerpt": "Golden Retriever Mom Shirt – Perfect Gift for Dog Lovers",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Golden%20Retriever%20Mom%20Shirt%20Dog%20Lover%20Gift%20Modern"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Golden%20Retriever%20Mom%20Shirt%20Dog%20Lover%20Gift%20Modern",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-48",
@@ -1731,7 +1738,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 54945,
       "collection": "Dog Apparel",
-      "type": "T-Shirts",
       "tags": [
         "Dog Mom Shirt",
         "Dog Mom Gift",
@@ -1761,7 +1767,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/c655d8/7841594081/il_fullxfull.7841594081_lcua.jpg"
       ],
       "excerpt": "Celebrate the love between a woman and her dog with this cute floral Dog Mom shirt featuring a soft tulip wreath design and paw print detail. This charming pet lover shir",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Floral%20Dog%20Mom%20Shirt%20Tulip%20Wreath%20Paw%20Print"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Floral%20Dog%20Mom%20Shirt%20Tulip%20Wreath%20Paw%20Print",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-49",
@@ -1770,7 +1777,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 79920,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "50th Birthday Gift",
         "Born In 1976 Shirt",
@@ -1800,7 +1806,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/b17811/7841001877/il_fullxfull.7841001877_3kea.jpg"
       ],
       "excerpt": "Celebrate turning 50 with a design inspired by classic software versioning. This geek friendly birthday shirt displays Version 5.0 Stable Build EST 1976, perfect for deve",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=50th%20Birthday%20Programmer%20Shirt%20Version%205.0%20Stable%20Build"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=50th%20Birthday%20Programmer%20Shirt%20Version%205.0%20Stable%20Build",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-50",
@@ -1809,7 +1816,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 91908,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "1984 Birthday",
         "Born In 1984",
@@ -1839,7 +1845,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/05f264/7833397127/il_fullxfull.7833397127_287g.jpg"
       ],
       "excerpt": "Version 4.0. Stable Build. Established 1984.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=1984%20Birthday%20Shirt%20Version%204.0%20Stable%20Build%20Tee"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=1984%20Birthday%20Shirt%20Version%204.0%20Stable%20Build%20Tee",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-51",
@@ -1848,7 +1855,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 79920,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "1989 Birthday",
         "Born In 1989",
@@ -1878,7 +1884,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/a82803/7828994645/il_fullxfull.7828994645_mf2h.jpg"
       ],
       "excerpt": "Version 3.5. Stable Build. Established 1989.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=1989%20Stable%20Build%20Version%203.5%20T-Shirt%20Retro%20Tech"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=1989%20Stable%20Build%20Version%203.5%20T-Shirt%20Retro%20Tech",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-52",
@@ -1887,7 +1894,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 52947,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "1994 Birthday",
         "Born In 1994",
@@ -1917,7 +1923,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/a8f7b0/7947294105/il_fullxfull.7947294105_ew98.jpg"
       ],
       "excerpt": "Version 3.0. Stable Build. Established 1994.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=1994%20Stable%20Build%20Version%203.0%20Birthday%20Programmer%20T-Shirt"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=1994%20Stable%20Build%20Version%203.0%20Birthday%20Programmer%20T-Shirt",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-53",
@@ -1926,7 +1933,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 37962,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "1995 Birthday",
         "Born In 1995",
@@ -1956,7 +1962,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/6586fa/7899194996/il_fullxfull.7899194996_5oss.jpg"
       ],
       "excerpt": "Version 2.9. Stable Build. Established 1995.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=1995%20Stable%20Build%20Version%202.9%20T-Shirt%20Retro%20Tech"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=1995%20Stable%20Build%20Version%202.9%20T-Shirt%20Retro%20Tech",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-54",
@@ -1965,7 +1972,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 34965,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "1996 Birthday",
         "Born In 1996",
@@ -1995,7 +2001,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/7f9a49/7958963294/il_fullxfull.7958963294_ln2t.jpg"
       ],
       "excerpt": "Version 2.8. Stable Build. Established 1996.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=1996%20Birthday%20Shirt%20Version%202.8%20Stable%20Build%20Tee"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=1996%20Birthday%20Shirt%20Version%202.8%20Stable%20Build%20Tee",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-55",
@@ -2004,7 +2011,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 26973,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "Programmer Tee",
         "Coder Humor",
@@ -2031,7 +2037,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/b73939/7914985776/il_fullxfull.7914985776_ht62.jpg"
       ],
       "excerpt": "If you have ever wished life had a command prompt, this retro terminal design will feel familiar.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Retro%20DOS%20Command%20T%20Shirt%20Format%20Life%20Funny"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Retro%20DOS%20Command%20T%20Shirt%20Format%20Life%20Funny",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-56",
@@ -2040,7 +2047,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 49950,
       "collection": "Retro Tech",
-      "type": "Hoodies & Sweatshirts",
       "tags": [
         "Programmer Gift",
         "Coder Humor",
@@ -2070,7 +2076,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/ffdd3c/7833476753/il_fullxfull.7833476753_kyxv.jpg"
       ],
       "excerpt": "Retro Programmer Humor Sweatshirt",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Retro%20Programmer%20Sweatshirt%20Funny%20Coding%20Command%20Line%20Humor"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Retro%20Programmer%20Sweatshirt%20Funny%20Coding%20Command%20Line%20Humor",
+      "category": "Sweat Shirt"
     },
     {
       "id": "etsy-57",
@@ -2079,7 +2086,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 999,
       "collection": "Retro Tech",
-      "type": "Mugs",
       "tags": [
         "Vanlife Humor",
         "Camper Gift",
@@ -2105,7 +2111,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/1001fc/7778297474/il_fullxfull.7778297474_psuw.jpg"
       ],
       "excerpt": "It's all about the custom design when you sell ceramic coffee cups. Create a beautiful, original design, and we'll print them on these cups in picture-perfect quality. Th",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Vanlife%20Mug%20Camper%20Technical%20Schematic%20Coffee%20Cup"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Vanlife%20Mug%20Camper%20Technical%20Schematic%20Coffee%20Cup",
+      "category": "Cup"
     },
     {
       "id": "etsy-58",
@@ -2114,7 +2121,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 18981,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "Vanlife Humor",
         "Camper T Shirt",
@@ -2140,7 +2146,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/65996a/7947326457/il_fullxfull.7947326457_o4ys.jpg"
       ],
       "excerpt": "For the nomad who knows that \"level\" is a matter of opinion and a sturdy stack of found objects. Whether you're chasing that elusive 0.00° pitch or just trying not to rol",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Vanlife%20T-Shirt%20VW%20Van%20Technical%20Schematic%20Nomad"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Vanlife%20T-Shirt%20VW%20Van%20Technical%20Schematic%20Nomad",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-59",
@@ -2149,7 +2156,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 51948,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "Vanlife Humor",
         "Camper T Shirt",
@@ -2179,7 +2185,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/cf8c76/7826083823/il_fullxfull.7826083823_oni1.jpg"
       ],
       "excerpt": "For the nomad who knows that \"level\" is a matter of opinion and a sturdy stack of found objects. Whether you're chasing that elusive 0.00° pitch or just trying not to rol",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Vanlife%20T-Shirt%20VW%20Camper%20Technical%20Schematic%20Nomad"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Vanlife%20T-Shirt%20VW%20Camper%20Technical%20Schematic%20Nomad",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-60",
@@ -2188,7 +2195,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 999,
       "collection": "Retro Tech",
-      "type": "Mugs",
       "tags": [
         "Vanlife Humor",
         "Camper Gift",
@@ -2212,7 +2218,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/faa9dd/7826058343/il_fullxfull.7826058343_q5h8.jpg"
       ],
       "excerpt": "For the nomad who knows that \"level\" is a matter of opinion and a sturdy stack of found objects. This 11oz ceramic mug features a high-resolution technical schematic of a",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Vanlife%20VW%20Technical%20Schematic%20Mug%20Camper%20Van%20Humor"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Vanlife%20VW%20Technical%20Schematic%20Mug%20Camper%20Van%20Humor",
+      "category": "Mug"
     },
     {
       "id": "etsy-61",
@@ -2221,7 +2228,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 84915,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "Retro Tech",
         "System Error",
@@ -2251,7 +2257,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/5090f8/7773924004/il_fullxfull.7773924004_hp5e.jpg"
       ],
       "excerpt": "Embrace the glitch with this minimalist tribute to 90s computing. Featuring a sharp, high-resolution System Error warning triangle, this tee offers a clean 'pocket-hit' a",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Programmer%20T%20Shirt%20System%20Error%20Retro%2090s"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Programmer%20T%20Shirt%20System%20Error%20Retro%2090s",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-62",
@@ -2260,7 +2267,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 999,
       "collection": "Retro Tech",
-      "type": "Mugs",
       "tags": [
         "Retro Mug",
         "Windows 95",
@@ -2285,7 +2291,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/2300a8/7771075010/il_fullxfull.7771075010_4kfs.jpg"
       ],
       "excerpt": "Bring some 32-bit nostalgia to your desk with this high-resolution recreation of the classic Drive A: Properties window. This 11oz ceramic mug features the iconic navy, t",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Retro%20Windows%2095%20Floppy%20Disk%20Mug%20-%201.44MB"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Retro%20Windows%2095%20Floppy%20Disk%20Mug%20-%201.44MB",
+      "category": "Mug"
     },
     {
       "id": "etsy-63",
@@ -2294,7 +2301,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 53946,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "Retro Tech",
         "Windows 95",
@@ -2324,7 +2330,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/8ec46a/7947221293/il_fullxfull.7947221293_1cps.jpg"
       ],
       "excerpt": "Step back into 1995 with this high-definition technical schematic of the iconic Drive A: Properties window. Featuring the classic 3D-effect pie chart with a staggering 1.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Windows%2095%20Floppy%20Disk%20Drive%20A%20Properties%20Retro"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Windows%2095%20Floppy%20Disk%20Drive%20A%20Properties%20Retro",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-64",
@@ -2333,7 +2340,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 39960,
       "collection": "Fishing",
-      "type": "T-Shirts",
       "tags": [
         "Funny Sloth Shirt",
         "TOTGAF Tee",
@@ -2363,7 +2369,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/77e671/7941717020/il_fullxfull.7941717020_eeua.jpg"
       ],
       "excerpt": "This TOTGAF sloth T shirt combines laid back attitude with sharp humour. Featuring a relaxed sloth above a chaotic crowd, it captures that quiet mindset of not getting ca",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=TOTGAF%20Sloth%20T%20Shirt%20Funny%20Sarcastic%20Shirt%20I"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=TOTGAF%20Sloth%20T%20Shirt%20Funny%20Sarcastic%20Shirt%20I",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-65",
@@ -2372,7 +2379,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 999,
       "collection": "Fishing",
-      "type": "Mugs",
       "tags": [
         "Funny Sloth Mug",
         "TOTGAF",
@@ -2398,7 +2404,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/2f4c25/7798306865/il_fullxfull.7798306865_f301.jpg"
       ],
       "excerpt": "Exhausted by the constant noise of the world? This \"TOTGAF\" Sloth Mug is the ultimate badge of honor for anyone who has officially reached the age of \"too old for this.\" ",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Sloth%20Mug%20TOTGAF%20Slogan%20Ceramic%20Coffee%20Cup%2011oz"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Sloth%20Mug%20TOTGAF%20Slogan%20Ceramic%20Coffee%20Cup%2011oz",
+      "category": "Cup"
     },
     {
       "id": "etsy-66",
@@ -2407,7 +2414,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 56943,
       "collection": "Vanlife",
-      "type": "T-Shirts",
       "tags": [
         "Vanlife Shirt",
         "Beaver Shirt",
@@ -2437,7 +2443,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/dcb11c/7780860001/il_fullxfull.7780860001_jk7c.jpg"
       ],
       "excerpt": "Celebrate the freedom of the open road with this Vanlife Wild Beavers T Shirt. Featuring two cool wild beavers in sunglasses, this design blends subtle outdoor humour wit",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Vanlife%20Wild%20Beavers%20T-Shirt%20Funny%20Camping%20Graphic%20Tee"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Vanlife%20Wild%20Beavers%20T-Shirt%20Funny%20Camping%20Graphic%20Tee",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-67",
@@ -2446,7 +2453,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 46953,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "Funny Tech Shirt",
         "Geek Humor Tee",
@@ -2475,7 +2481,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/c6b967/7729525752/il_fullxfull.7729525752_26gk.jpg"
       ],
       "excerpt": "Embrace your inner tech genius with a touch of classic sarcasm. This ultra-comfortable unisex tee features the timeless tech-humor slogan: \"Thought I was Wrong Once... Tu",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Sarcastic%20Tech%20Humor%20T-Shirt%20Retro%20Computer%20Geek%20Slogan"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Sarcastic%20Tech%20Humor%20T-Shirt%20Retro%20Computer%20Geek%20Slogan",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-68",
@@ -2484,7 +2491,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 47952,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [],
       "image": "https://i.etsystatic.com/63847702/r/il/215195/7898419092/il_fullxfull.7898419092_5yo2.jpg",
       "images": [
@@ -2500,7 +2506,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/f1d305/7946390999/il_fullxfull.7946390999_jpbw.jpg"
       ],
       "excerpt": "Sometimes you do not need to say much.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Full%20Power%20Restored%20Minimalist%20Tech%20T%20Shirt"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Full%20Power%20Restored%20Minimalist%20Tech%20T%20Shirt",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-69",
@@ -2509,7 +2516,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 46953,
       "collection": "Office & Everyday Humour",
-      "type": "T-Shirts",
       "tags": [
         "Dating App Humor",
         "Funny T Shirt",
@@ -2538,7 +2544,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/ef5962/7898330288/il_fullxfull.7898330288_807o.jpg"
       ],
       "excerpt": "Sometimes the simplest message says it all.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=T-Shirt%20Minimalist%20Social%20Humor%20Top%20Not%20on%20Dating"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=T-Shirt%20Minimalist%20Social%20Humor%20Top%20Not%20on%20Dating",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-70",
@@ -2547,7 +2554,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 33966,
       "collection": "Birthday Versions",
-      "type": "Hoodies & Sweatshirts",
       "tags": [
         "Van Life Sweatshirt",
         "Campervan Sweatshirt",
@@ -2577,7 +2583,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/92e0c7/7867945664/il_fullxfull.7867945664_mhvc.jpg"
       ],
       "excerpt": "Van life is the plan. The build is still… ongoing.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Van%20Life%20Sweatshirt%20Campervan%20Sweatshirt%20Funny%20Van%20Life"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Van%20Life%20Sweatshirt%20Campervan%20Sweatshirt%20Funny%20Van%20Life",
+      "category": "Sweat Shirt"
     },
     {
       "id": "etsy-71",
@@ -2586,7 +2593,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 4995,
       "collection": "Retro Tech",
-      "type": "Bags & Accessories",
       "tags": [
         "Laptop Sleeve",
         "Tech Accessory",
@@ -2612,7 +2618,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/1c730e/7640294066/il_fullxfull.7640294066_k9wh.jpg"
       ],
       "excerpt": "Wrap your high-performance tech in a reminder of simpler times. This premium laptop sleeve features a dry, technical \"System Properties\" spec plate, detailing a 1.44MB st",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Retro%20System%20Properties%20Laptop%20Sleeve%201.44MB%20Floppy%20Disk"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Retro%20System%20Properties%20Laptop%20Sleeve%201.44MB%20Floppy%20Disk",
+      "category": "Bag"
     },
     {
       "id": "etsy-72",
@@ -2621,7 +2628,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 82917,
       "collection": "Retro Tech",
-      "type": "Hoodies & Sweatshirts",
       "tags": [
         "Retro Tech Hoodie",
         "Van Life Clothing",
@@ -2651,7 +2657,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/ebc45d/7688326345/il_fullxfull.7688326345_nc0s.jpg"
       ],
       "excerpt": "Upgrade your system with this premium \"System Properties\" hoodie. Designed for developers, van lifers, and vintage tech enthusiasts, this sweatshirt features a dry techni",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Retro%20Geek%20Life%20Hoodie%20System%20Properties%20Tech%20Spec"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Retro%20Geek%20Life%20Hoodie%20System%20Properties%20Tech%20Spec",
+      "category": "Hoodie"
     },
     {
       "id": "etsy-73",
@@ -2660,7 +2667,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 999,
       "collection": "Retro Tech",
-      "type": "Mugs",
       "tags": [
         "Van Life Shirt",
         "Retro Tech Tee",
@@ -2685,7 +2691,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/63013c/7640241470/il_fullxfull.7640241470_ax88.jpg"
       ],
       "excerpt": "This isn't just a mug; it’s a hardware manifest for those who prefer solar power over cloud syncing. Featuring a dry, technical \"System Properties\" UI design, it’s the ul",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Retro%20System%20Properties%20Mug%20Funny%20Van%20Life%20Campfire"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Retro%20System%20Properties%20Mug%20Funny%20Van%20Life%20Campfire",
+      "category": "Cup"
     },
     {
       "id": "etsy-74",
@@ -2694,7 +2701,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 11988,
       "collection": "Retro Tech",
-      "type": "Mugs",
       "tags": [
         "Insert Disk Mug",
         "Retro Computer Mug",
@@ -2722,7 +2728,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/b8ff6f/7678651571/il_fullxfull.7678651571_8u5h.jpg"
       ],
       "excerpt": "• Humor and gift intent included",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Insert%20Disk%20and%20Retry%20Mug%20Retro%20Computer%20Humor"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Insert%20Disk%20and%20Retry%20Mug%20Retro%20Computer%20Humor",
+      "category": "Mug"
     },
     {
       "id": "etsy-75",
@@ -2731,7 +2738,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 23976,
       "collection": "Retro Tech",
-      "type": "Gifts",
       "tags": [
         "Retro Phone Case",
         "Floppy Disk Case",
@@ -2761,7 +2767,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/914cfa/7619402928/il_fullxfull.7619402928_nj2v.jpg"
       ],
       "excerpt": "Part of the 1.44MB Originals collection, this phone case is a quiet nod to the era when storage was measured in megabytes and technology felt tangible.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Retro%20Floppy%20Disk%20Phone%20Case%2090s%20Tech%20Gift"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Retro%20Floppy%20Disk%20Phone%20Case%2090s%20Tech%20Gift",
+      "category": "Phone Case"
     },
     {
       "id": "etsy-76",
@@ -2770,7 +2777,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 24975,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "This May Take Awhile",
         "Loading Bar Shirt",
@@ -2796,7 +2802,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/5401fc/7667213831/il_fullxfull.7667213831_df4i.jpg"
       ],
       "excerpt": "Some things do not need rushing.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=This%20May%20Take%20a%20While%20Loading%20T%20Shirt"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=This%20May%20Take%20a%20While%20Loading%20T%20Shirt",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-77",
@@ -2805,7 +2812,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 999,
       "collection": "Retro Tech",
-      "type": "Bags & Accessories",
       "tags": [
         "144mb Originals",
         "Tech Backpack",
@@ -2830,7 +2836,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/2bf65c/7877557007/il_fullxfull.7877557007_k7et.jpg"
       ],
       "excerpt": "Have you got room for all that? With our roomy and durable backpack, you will! This bag is made from spun polyester and weights 1.3 lbs, just enough to be light, strong a",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Backpack%20-%20The%20classic%201.44MB%20Retro%20Gift%20-"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Backpack%20-%20The%20classic%201.44MB%20Retro%20Gift%20-",
+      "category": "Backpack"
     },
     {
       "id": "etsy-78",
@@ -2839,7 +2846,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 14985,
       "collection": "Retro Tech",
-      "type": "Bags & Accessories",
       "tags": [
         "Low Battery Tote",
         "Full Power Tote",
@@ -2869,7 +2875,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/109127/7613090622/il_fullxfull.7613090622_dnos.jpg"
       ],
       "excerpt": "This minimalist tote bag features the full Low Battery and Full Power Restored designs, printed on opposite sides so it can be worn to match your energy and mood.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Low%20Battery%20Full%20Power%20Tote%20Bag%20Minimal%20Tech"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Low%20Battery%20Full%20Power%20Tote%20Bag%20Minimal%20Tech",
+      "category": "Bag"
     },
     {
       "id": "etsy-79",
@@ -2878,7 +2885,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 4995,
       "collection": "Retro Tech",
-      "type": "Bags & Accessories",
       "tags": [
         "Full Power Restored",
         "Laptop Sleeve Humor",
@@ -2904,7 +2910,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/444476/7660942081/il_fullxfull.7660942081_3su6.jpg"
       ],
       "excerpt": "Made for transferring laptops in the coolest way possible, this personalized laptop sleeve is a dream come true for anyone working on the go or traveling. Featuring a bla",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Neoprene%20Laptop%20Sleeve%20Water%20Resistant%20Dual%20Zipper%20Case"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Neoprene%20Laptop%20Sleeve%20Water%20Resistant%20Dual%20Zipper%20Case",
+      "category": "Laptop Sleeve"
     },
     {
       "id": "etsy-80",
@@ -2913,7 +2920,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 4995,
       "collection": "Retro Tech",
-      "type": "Bags & Accessories",
       "tags": [
         "Low Battery Sleeve",
         "Laptop Sleeve Humor",
@@ -2938,7 +2944,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/819ca5/7660922255/il_fullxfull.7660922255_n1oc.jpg"
       ],
       "excerpt": "Some days run at full power. Others do not.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Neoprene%20Laptop%20Sleeve%20Water%20Resistant%20Dual%20Zipper%20Case"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Neoprene%20Laptop%20Sleeve%20Water%20Resistant%20Dual%20Zipper%20Case",
+      "category": "Laptop Sleeve"
     },
     {
       "id": "etsy-81",
@@ -2947,7 +2954,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 30969,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [],
       "image": "https://i.etsystatic.com/63847702/r/il/337b6d/7946367349/il_fullxfull.7946367349_3ruv.jpg",
       "images": [
@@ -2962,7 +2968,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/59981f/7945896837/il_fullxfull.7945896837_renh.jpg"
       ],
       "excerpt": "Sometimes you do not need to say much.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Low%20Power%20Minimalist%20Tech%20T%20Shirt"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Low%20Power%20Minimalist%20Tech%20T%20Shirt",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-82",
@@ -2971,7 +2978,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 11988,
       "collection": "Retro Tech",
-      "type": "Mugs",
       "tags": [
         "Low Battery Mug",
         "Power Saving Mode",
@@ -3001,7 +3007,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/8dab93/7612817296/il_fullxfull.7612817296_1jzo.jpg"
       ],
       "excerpt": "Some days start or finish in power saving mode.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Low%20Battery%20Full%20Power%20Coffee%20Mug"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Low%20Battery%20Full%20Power%20Coffee%20Mug",
+      "category": "Mug"
     },
     {
       "id": "etsy-83",
@@ -3010,7 +3017,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 59940,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "Low Power",
         "Low Battery Series",
@@ -3038,7 +3044,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/c668e2/7946935819/il_fullxfull.7946935819_klpl.jpg"
       ],
       "excerpt": "This “Full Power Restored” t shirt is the upbeat counterpart to the Low Battery design. Inspired by classic battery indicators and clean tech interfaces, it celebrates th",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Full%20Power%20Restored%20T%20Shirt%20Retro%20Tech%20Humor"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Full%20Power%20Restored%20T%20Shirt%20Retro%20Tech%20Humor",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-84",
@@ -3047,7 +3054,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 54945,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "Low Battery Shirt",
         "Power Saving Mode",
@@ -3077,7 +3083,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/5b5ed7/7898984062/il_fullxfull.7898984062_n0hr.jpg"
       ],
       "excerpt": "This “Low Battery – Power Saving Mode” t shirt is a clean, understated nod to modern life running on empty. Inspired by classic battery indicators and minimalist tech des",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Low%20Battery%20Power%20Saving%20Mode%20T%20Shirt%20Retro"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Low%20Battery%20Power%20Saving%20Mode%20T%20Shirt%20Retro",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-85",
@@ -3086,7 +3093,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 39960,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "Retro Computer Shirt",
         "Tech Nostalgia Tee",
@@ -3116,7 +3122,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/543804/7947016971/il_fullxfull.7947016971_rgab.jpg"
       ],
       "excerpt": "Some things never needed an update.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=1.44MB%20Originals%20Retro%20Computer%20T%20Shirt%20Minimal%20Tech"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=1.44MB%20Originals%20Retro%20Computer%20T%20Shirt%20Minimal%20Tech",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-86",
@@ -3125,7 +3132,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 7992,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "Tech Humor Shirt",
         "Womens Tech Tee",
@@ -3150,7 +3156,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/27ebf0/7947209729/il_fullxfull.7947209729_q4w3.jpg"
       ],
       "excerpt": "Made to feel like a well-loved favorite, these tees come with a feminine fit that is as stylish as it is comfy. The ribbed knitting makes the collar highly elastic while ",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=If%20I%20am%20Not%20Responding%20Try%20Turning%20Me"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=If%20I%20am%20Not%20Responding%20Try%20Turning%20Me",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-87",
@@ -3159,7 +3166,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 999,
       "collection": "Fishing",
-      "type": "Mugs",
       "tags": [
         "Dry Humor Mug",
         "Sarcastic Mug",
@@ -3188,7 +3194,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/4a7583/7779908835/il_fullxfull.7779908835_vhnt.jpg"
       ],
       "excerpt": "This dry humor black coffee mug features the understated phrase “I Don’t Need Advice. I Already Tried That.” Printed in clean white text on a glossy black ceramic mug, it",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=I%20Don%20t%20Need%20Advice%20Mug%20Sarcastic%20Dry"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=I%20Don%20t%20Need%20Advice%20Mug%20Sarcastic%20Dry",
+      "category": "Mug"
     },
     {
       "id": "etsy-88",
@@ -3197,7 +3204,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 63936,
       "collection": "Fishing",
-      "type": "T-Shirts",
       "tags": [
         "Dry Humor Shirt",
         "Sarcastic Tshirt",
@@ -3227,7 +3233,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/446735/7629090615/il_fullxfull.7629090615_cy8n.jpg"
       ],
       "excerpt": "This dry humor t shirt features the understated phrase “I Don’t Need Advice. I Already Tried That.” A quietly sarcastic statement for people who appreciate wit without ex",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=I%20Don%20t%20Need%20Advice%20T%20Shirt%20Dry"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=I%20Don%20t%20Need%20Advice%20T%20Shirt%20Dry",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-89",
@@ -3236,7 +3243,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 47952,
       "collection": "Fishing",
-      "type": "Hoodies & Sweatshirts",
       "tags": [
         "Thought I Was Wrong",
         "Dry Humor Sweatshirt",
@@ -3261,7 +3267,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/54a07a/7913027628/il_fullxfull.7913027628_k0zo.jpg"
       ],
       "excerpt": "Sometimes you are convinced you are wrong.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Thought%20I%20Was%20Wrong%20Once%20Sweatshirt%20Dry%20Humor"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Thought%20I%20Was%20Wrong%20Once%20Sweatshirt%20Dry%20Humor",
+      "category": "Sweat Shirt"
     },
     {
       "id": "etsy-90",
@@ -3270,7 +3277,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 999,
       "collection": "Fishing",
-      "type": "Mugs",
       "tags": [
         "Thought I Was Wrong",
         "Dry Humor",
@@ -3293,7 +3299,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/0a25d7/7779854339/il_fullxfull.7779854339_1vcl.jpg"
       ],
       "excerpt": "This mug is for those moments when confidence and reality gently disagree.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Thought%20I%20Was%20Wrong%20Once%20Mug%20Sarcastic%20Dry"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Thought%20I%20Was%20Wrong%20Once%20Mug%20Sarcastic%20Dry",
+      "category": "Mug"
     },
     {
       "id": "etsy-91",
@@ -3302,7 +3309,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 41958,
       "collection": "Fishing",
-      "type": "T-Shirts",
       "tags": [],
       "image": "https://i.etsystatic.com/63847702/r/il/24967b/7581043510/il_fullxfull.7581043510_fg26.jpg",
       "images": [
@@ -3318,7 +3324,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/94c3a9/7628964175/il_fullxfull.7628964175_5y5f.jpg"
       ],
       "excerpt": "Sometimes you are certain you are wrong.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Thought%20I%20Was%20Wrong%20Once%20T%20Shirt%20Dry"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Thought%20I%20Was%20Wrong%20Once%20T%20Shirt%20Dry",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-92",
@@ -3327,7 +3334,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 20979,
       "collection": "Birthday Versions",
-      "type": "T-Shirts",
       "tags": [],
       "image": "https://i.etsystatic.com/63847702/r/il/c29fdb/7947116389/il_fullxfull.7947116389_5o81.jpg",
       "images": [
@@ -3340,7 +3346,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/ef7132/7947118867/il_fullxfull.7947118867_14bo.jpg"
       ],
       "excerpt": "The Gildan 5000 heavy cotton tee is a dependable classic made for everyday wear and custom printing. Its 100% cotton fabric is tightly knit to give designs sharper detail",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Unisex%20Heavy%20Cotton%20Tee%20-%20Born%20on%20the"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Unisex%20Heavy%20Cotton%20Tee%20-%20Born%20on%20the",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-93",
@@ -3349,7 +3356,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 27972,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "Born In The 80s",
         "80s Generation",
@@ -3378,7 +3384,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/1cbbef/7899097398/il_fullxfull.7899097398_5ow8.jpg"
       ],
       "excerpt": "The Gildan Softstyle® 64000 redefines casual comfort with a modern unisex cut and ultra-soft materials. Solid colors are 100% cotton, while heathers and sport grey use po",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Unisex%20Softstyle%20T-Shirt%20-Born%20in%20the%2080s"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Unisex%20Softstyle%20T-Shirt%20-Born%20in%20the%2080s",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-94",
@@ -3387,7 +3394,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 72927,
       "collection": "Fishing",
-      "type": "Hoodies & Sweatshirts",
       "tags": [
         "Fishing Hoodie",
         "Angler Hoodie",
@@ -3417,7 +3423,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/83d6a5/7577887250/il_fullxfull.7577887250_j1eg.jpg"
       ],
       "excerpt": "Fishing keeps me out of trouble.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Fishing%20Keeps%20Me%20Out%20of%20Trouble%20Mostly%20Hoodie"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Fishing%20Keeps%20Me%20Out%20of%20Trouble%20Mostly%20Hoodie",
+      "category": "Hoodie"
     },
     {
       "id": "etsy-95",
@@ -3426,7 +3433,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 20979,
       "collection": "Fishing",
-      "type": "T-Shirts",
       "tags": [
         "Fishing T Shirt",
         "Angler Tee",
@@ -3452,7 +3458,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/f37a3b/7899064482/il_fullxfull.7899064482_l97s.jpg"
       ],
       "excerpt": "This funny fishing t shirt is for anyone who knows that fishing is less about catching fish and more about staying out of trouble. Mostly.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Fishing%20Keeps%20Me%20Out%20of%20Trouble%20Mostly%20T-Shirt"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Fishing%20Keeps%20Me%20Out%20of%20Trouble%20Mostly%20T-Shirt",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-96",
@@ -3461,7 +3468,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 23976,
       "collection": "Fishing",
-      "type": "Hoodies & Sweatshirts",
       "tags": [
         "Fishing Sweatshirt",
         "Angler Sweatshirt",
@@ -3485,7 +3491,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/e8f396/7899290200/il_fullxfull.7899290200_hwb2.jpg"
       ],
       "excerpt": "The Gildan 18000 sweatshirt is a unisex heavy blend crewneck made from a 50/50 cotton-polyester fabric, combining softness with lasting durability. Its smooth surface sup",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Unisex%20Heavy%20Blend%20Crewneck%20Sweatshirt"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Unisex%20Heavy%20Blend%20Crewneck%20Sweatshirt",
+      "category": "Sweat Shirt"
     },
     {
       "id": "etsy-97",
@@ -3494,7 +3501,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 7992,
       "collection": "Fishing",
-      "type": "Mugs",
       "tags": [
         "Fishing Mug",
         "Angler Gift",
@@ -3523,7 +3529,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/de5825/7577289938/il_fullxfull.7577289938_3va9.jpg"
       ],
       "excerpt": "Start the day the angler way with this funny fishing-themed accent coffee mug. Featuring the understated line “Fishing keeps me out of trouble. Mostly.” with a simple fis",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Fishing%20Mug%20Angler%20Humor%20Gift"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Fishing%20Mug%20Angler%20Humor%20Gift",
+      "category": "Mug"
     },
     {
       "id": "etsy-98",
@@ -3532,7 +3539,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 999,
       "collection": "Fishing",
-      "type": "T-Shirts",
       "tags": [
         "Fishing Water Bottle",
         "Angler Gift",
@@ -3559,7 +3565,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/217777/7577249322/il_fullxfull.7577249322_m7fi.jpg"
       ],
       "excerpt": "Stay hydrated and keep your sense of humour intact with this funny fishing-themed stainless steel water bottle. Featuring the playful line “Fishing keeps me out of troubl",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Fishing%20Keeps%20Me%20Out%20of%20Trouble%20Mostly%20Funny"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Fishing%20Keeps%20Me%20Out%20of%20Trouble%20Mostly%20Funny",
+      "category": "Mug"
     },
     {
       "id": "etsy-99",
@@ -3568,7 +3575,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 1998,
       "collection": "Fishing",
-      "type": "Mugs",
       "tags": [],
       "image": "https://i.etsystatic.com/63847702/r/il/2e922a/7622879367/il_fullxfull.7622879367_4tyo.jpg",
       "images": [
@@ -3584,7 +3590,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/8432af/7622890037/il_fullxfull.7622890037_3p4t.jpg"
       ],
       "excerpt": "It's all about the custom design when you sell ceramic coffee cups. Create a beautiful, original design, and we'll print them on these cups in picture-perfect quality. Th",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Anglers%20Funny%20Ceramic%20Coffee%20Cups%2011oz%2015oz"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Anglers%20Funny%20Ceramic%20Coffee%20Cups%2011oz%2015oz",
+      "category": "Cup"
     },
     {
       "id": "etsy-100",
@@ -3593,7 +3600,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 999,
       "collection": "Fishing",
-      "type": "Mugs",
       "tags": [
         "Sarcastic Mug",
         "Grumpy Humor Mug",
@@ -3616,7 +3622,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/dd157b/7622635243/il_fullxfull.7622635243_lxfs.jpg"
       ],
       "excerpt": "Sometimes the classics deserve a modern delivery.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Sarcastic%20Coffee%20Mug%20Absence%20Makes%20the%20Heart"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Funny%20Sarcastic%20Coffee%20Mug%20Absence%20Makes%20the%20Heart",
+      "category": "Mug"
     },
     {
       "id": "etsy-101",
@@ -3625,7 +3632,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 25974,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "Artificial Intel",
         "Tech Humor Shirt",
@@ -3652,7 +3658,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/18d327/7897993692/il_fullxfull.7897993692_9z5j.jpg"
       ],
       "excerpt": "Some people just operate on a different level.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Powered%20by%20Artificial%20Intelligence%20T-Shirt%20Minimalist%20Tech%20Humor"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Powered%20by%20Artificial%20Intelligence%20T-Shirt%20Minimalist%20Tech%20Humor",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-102",
@@ -3661,7 +3668,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 999,
       "collection": "Retro Tech",
-      "type": "Mugs",
       "tags": [
         "Artificial Intel",
         "Tech Humor Mug",
@@ -3685,7 +3691,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/d7061d/7574471588/il_fullxfull.7574471588_9j32.jpg"
       ],
       "excerpt": "Others are clearly Powered by Artificial Intelligence.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=AI%20Powered%20Coffee%20Mug%20Funny%20Tech%20Humor%20Sarcastic"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=AI%20Powered%20Coffee%20Mug%20Funny%20Tech%20Humor%20Sarcastic",
+      "category": "Mug"
     },
     {
       "id": "etsy-103",
@@ -3694,7 +3701,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 999,
       "collection": "Retro Tech",
-      "type": "Mugs",
       "tags": [
         "System Unresponsive",
         "Tech Humor Mug",
@@ -3714,7 +3720,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/98c6d5/7621688467/il_fullxfull.7621688467_5vt8.jpg"
       ],
       "excerpt": "Sometimes the system just needs a moment.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=System%20Unresponsive%20Mug%20Retro%20Computer%20Error%20Humor%20Coffee"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=System%20Unresponsive%20Mug%20Retro%20Computer%20Error%20Humor%20Coffee",
+      "category": "Cup"
     },
     {
       "id": "etsy-104",
@@ -3723,7 +3730,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 999,
       "collection": "Retro Tech",
-      "type": "Notebooks",
       "tags": [
         "System Unresponsive",
         "Tech Humor Notebook",
@@ -3749,7 +3755,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/904aa8/7573593604/il_fullxfull.7573593604_25lm.jpg"
       ],
       "excerpt": "Sometimes your brain needs a restart too.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=System%20Unresponsive%20Notebook%20Retro%20Tech%20Humor%20A5%20Wirebound"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=System%20Unresponsive%20Notebook%20Retro%20Tech%20Humor%20A5%20Wirebound",
+      "category": "Journal"
     },
     {
       "id": "etsy-105",
@@ -3758,7 +3765,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 1998,
       "collection": "Retro Tech",
-      "type": "Mugs",
       "tags": [
         "System Unresponsive",
         "Tech Humor Mug",
@@ -3786,7 +3792,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/4b7150/7618950113/il_fullxfull.7618950113_gotb.jpg"
       ],
       "excerpt": "Some mornings respond slower than others.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=System%20Unresponsive%20Mug%20Tech%20Humor%20System%20Message%20Funny"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=System%20Unresponsive%20Mug%20Tech%20Humor%20System%20Message%20Funny",
+      "category": "Mug"
     },
     {
       "id": "etsy-106",
@@ -3795,7 +3802,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 62937,
       "collection": "Retro Tech",
-      "type": "T-Shirts",
       "tags": [
         "Critical Update",
         "System Message",
@@ -3823,7 +3829,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/280bba/7618792733/il_fullxfull.7618792733_keai.jpg"
       ],
       "excerpt": "Some updates cannot be postponed.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Critical%20Update%20Required%20T%20Shirt%20System%20Message%20Tech"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Critical%20Update%20Required%20T%20Shirt%20System%20Message%20Tech",
+      "category": "T-Shirt"
     },
     {
       "id": "etsy-107",
@@ -3832,7 +3839,6 @@ window.CATALOGUE_DATA = {
       "currency": "GBP",
       "quantity": 55944,
       "collection": "Retro Tech",
-      "type": "Hoodies & Sweatshirts",
       "tags": [
         "Legacy Hardware",
         "Tech Humor",
@@ -3860,7 +3866,8 @@ window.CATALOGUE_DATA = {
         "https://i.etsystatic.com/63847702/r/il/1ccbb0/7618570453/il_fullxfull.7618570453_c8t2.jpg"
       ],
       "excerpt": "Some things are no longer current. They still work.",
-      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Legacy%20Hardware%20Sweatshirt%20Retro%20Tech%20Humor%20Funny%20Computer"
+      "url": "https://www.etsy.com/shop/HandyEnough?search_query=Legacy%20Hardware%20Sweatshirt%20Retro%20Tech%20Humor%20Funny%20Computer",
+      "category": "Sweat Shirt"
     }
   ]
 };
